@@ -21,14 +21,60 @@
       :root {
         color-scheme: light;
         --font-body: "DM Sans";
+        --font-size-body: 9.2px;
+        --font-size-title: 24px;
+        --font-size-section-title: 15px;
+        --font-size-heading: 9.8px;
+        --font-size-summary: 9.6px;
+        --font-size-small: 8px;
+        --font-weight-light: 300;
+        --font-weight-regular: 400;
+        --font-weight-medium: 500;
+        --line-height-body: 1.45;
+        --line-height-title: 0.98;
+        --line-height-section-title: 1.1;
+        --line-height-heading: 1.35;
+        --line-height-summary: 1.55;
+        --line-height-description: 1.48;
+        --line-height-compact: 1.3;
+        --letter-spacing-title: 0.7px;
+        --letter-spacing-section-title: 1.3px;
+        --letter-spacing-heading: 0.2px;
+        --letter-spacing-label: 0.6px;
         --paper: #fff;
         --canvas: #e5e5e3;
         --ink: #242426;
         --muted: #626267;
         --sidebar: #f0f0f0;
         --line: #d1d1d1;
+        --timeline: #9b9b9b;
         --accent: #f5ad2c;
-        --dark: #303136;
+        --accent-soft: #ffd881;
+        --on-accent: #fff;
+        --border-width: 1px;
+        --border-width-strong: 2px;
+        --body-padding: 24px;
+        --page-width: 210mm;
+        --page-min-height: 297mm;
+        --page-columns: 55mm minmax(0, 1fr);
+        --page-column-gap: 14mm;
+        --page-padding: 13mm 14mm 12mm;
+        --page-shadow: 0 16px 42px rgb(0 0 0 / 18%);
+        --sidebar-min-height: 272mm;
+        --sidebar-inline-spacing: 7mm;
+        --sidebar-section-padding: 10mm 0;
+        --identity-min-height: 46mm;
+        --identity-padding: 14mm 7mm 10mm;
+        --main-content-padding: 5mm 0 0;
+        --main-section-spacing: 9mm;
+        --experience-padding-end: 8mm;
+        --education-padding-start: 8mm;
+        --education-padding-end: 7mm;
+        --portfolio-padding-start: 8mm;
+        --work-list-gap: 9mm;
+        --contact-icon-size: 18px;
+        --contact-icon-glyph-size: 10px;
+        --contact-row-height: 22px;
       }
 
       *,
@@ -43,12 +89,12 @@
 
       body {
         margin: 0;
-        padding: 24px;
+        padding: var(--body-padding);
         color: var(--ink);
         font-family: var(--font-body);
-        font-size: 9.2px;
-        font-weight: 300;
-        line-height: 1.45;
+        font-size: var(--font-size-body);
+        font-weight: var(--font-weight-light);
+        line-height: var(--line-height-body);
         -webkit-font-smoothing: antialiased;
       }
 
@@ -70,19 +116,19 @@
 
       h2 {
         margin-bottom: 13px;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 1.1;
-        letter-spacing: 1.3px;
+        font-size: var(--font-size-section-title);
+        font-weight: var(--font-weight-medium);
+        line-height: var(--line-height-section-title);
+        letter-spacing: var(--letter-spacing-section-title);
         text-transform: uppercase;
       }
 
       h3 {
         margin-bottom: 1px;
-        font-size: 9.8px;
-        font-weight: 500;
-        line-height: 1.35;
-        letter-spacing: 0.2px;
+        font-size: var(--font-size-heading);
+        font-weight: var(--font-weight-medium);
+        line-height: var(--line-height-heading);
+        letter-spacing: var(--letter-spacing-heading);
       }
 
       p {
@@ -95,34 +141,34 @@
       }
 
       a:focus-visible {
-        outline: 2px solid var(--accent);
+        outline: var(--border-width-strong) solid var(--accent);
         outline-offset: 2px;
       }
 
       .resume {
         display: grid;
-        grid-template-columns: 55mm minmax(0, 1fr);
-        gap: 14mm;
-        width: 210mm;
-        min-height: 297mm;
+        grid-template-columns: var(--page-columns);
+        gap: var(--page-column-gap);
+        width: var(--page-width);
+        min-height: var(--page-min-height);
         margin: 0 auto;
-        padding: 13mm 14mm 12mm;
+        padding: var(--page-padding);
         overflow: hidden;
         background: var(--paper);
-        box-shadow: 0 16px 42px rgb(0 0 0 / 18%);
+        box-shadow: var(--page-shadow);
       }
 
       .sidebar {
         display: flex;
-        min-height: 272mm;
+        min-height: var(--sidebar-min-height);
         flex-direction: column;
         background: var(--sidebar);
       }
 
       .sidebar__identity {
         position: relative;
-        min-height: 46mm;
-        padding: 14mm 7mm 10mm;
+        min-height: var(--identity-min-height);
+        padding: var(--identity-padding);
       }
 
       .sidebar__identity::after {
@@ -130,17 +176,17 @@
         right: 0;
         bottom: 0;
         left: 0;
-        height: 2px;
+        height: var(--border-width-strong);
         background: var(--accent);
         content: "";
       }
 
       h1 {
         margin-bottom: 4px;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 0.98;
-        letter-spacing: 0.7px;
+        font-size: var(--font-size-title);
+        font-weight: var(--font-weight-light);
+        line-height: var(--line-height-title);
+        letter-spacing: var(--letter-spacing-title);
         text-transform: uppercase;
       }
 
@@ -151,16 +197,16 @@
 
       .sidebar__identity p {
         font-family: var(--font-body);
-        font-size: 8px;
-        font-weight: 400;
-        letter-spacing: 0.6px;
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-regular);
+        letter-spacing: var(--letter-spacing-label);
         text-transform: uppercase;
       }
 
       .sidebar__section {
-        margin: 0 7mm;
-        padding: 10mm 0;
-        border-bottom: 1px solid var(--line);
+        margin: 0 var(--sidebar-inline-spacing);
+        padding: var(--sidebar-section-padding);
+        border-bottom: var(--border-width) solid var(--line);
       }
 
       .profile dl {
@@ -171,7 +217,7 @@
       }
 
       .profile dt {
-        font-weight: 500;
+        font-weight: var(--font-weight-medium);
       }
 
       .profile dd {
@@ -188,24 +234,24 @@
       .contact-list a,
       .contact-list p {
         display: grid;
-        grid-template-columns: 18px minmax(0, 1fr);
+        grid-template-columns: var(--contact-icon-size) minmax(0, 1fr);
         align-items: center;
-        min-height: 22px;
+        min-height: var(--contact-row-height);
       }
 
       .contact-list__icon {
         display: grid;
-        width: 18px;
-        height: 18px;
+        width: var(--contact-icon-size);
+        height: var(--contact-icon-size);
         align-self: center;
         place-items: center;
         background: var(--accent);
-        color: #fff;
+        color: var(--on-accent);
       }
 
       .contact-list__icon svg {
-        width: 10px;
-        height: 10px;
+        width: var(--contact-icon-glyph-size);
+        height: var(--contact-icon-glyph-size);
         fill: currentColor;
       }
 
@@ -225,9 +271,9 @@
 
       .skills__group h3 {
         margin-bottom: 5px;
-        font-size: 8px;
-        font-weight: 500;
-        letter-spacing: 0.7px;
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-medium);
+        letter-spacing: var(--letter-spacing-title);
       }
 
       .skills ul {
@@ -243,16 +289,16 @@
       }
 
       .main-content {
-        padding-top: 5mm;
+        padding: var(--main-content-padding);
       }
 
       .main-section {
-        padding-bottom: 9mm;
-        border-bottom: 2px solid var(--line);
+        padding-bottom: var(--main-section-spacing);
+        border-bottom: var(--border-width-strong) solid var(--line);
       }
 
       .main-section + .main-section {
-        padding-top: 9mm;
+        padding-top: var(--main-section-spacing);
       }
 
       .about p,
@@ -263,18 +309,18 @@
       }
 
       .about p {
-        font-size: 9.6px;
-        line-height: 1.55;
+        font-size: var(--font-size-summary);
+        line-height: var(--line-height-summary);
       }
 
       .experience {
-        padding-bottom: 8mm;
+        padding-bottom: var(--experience-padding-end);
       }
 
       .work-list {
         position: relative;
         display: grid;
-        gap: 9mm;
+        gap: var(--work-list-gap);
         margin-left: 4px;
         padding-left: 19px;
       }
@@ -284,8 +330,8 @@
         top: 4px;
         bottom: 3px;
         left: 3px;
-        width: 2px;
-        background: #9b9b9b;
+        width: var(--border-width-strong);
+        background: var(--timeline);
         content: "";
       }
 
@@ -300,9 +346,9 @@
         left: -19px;
         width: 7px;
         height: 24px;
-        border: 1px solid #ffd881;
+        border: var(--border-width) solid var(--accent-soft);
         background: var(--accent);
-        box-shadow: 0 0 0 4px #fff;
+        box-shadow: 0 0 0 4px var(--paper);
         content: "";
       }
 
@@ -324,13 +370,13 @@
         padding-top: 1px;
         color: var(--muted);
         font-family: var(--font-body);
-        font-size: 8px;
+        font-size: var(--font-size-small);
         white-space: nowrap;
       }
 
       .job__description {
         margin-bottom: 7px;
-        line-height: 1.48;
+        line-height: var(--line-height-description);
       }
 
       .job ul {
@@ -339,8 +385,8 @@
       }
 
       .education {
-        padding-top: 8mm;
-        padding-bottom: 7mm;
+        padding-top: var(--education-padding-start);
+        padding-bottom: var(--education-padding-end);
         border-bottom: 0;
       }
 
@@ -352,7 +398,7 @@
 
       .education-item {
         padding-top: 5px;
-        border-top: 1px solid var(--line);
+        border-top: var(--border-width) solid var(--line);
       }
 
       .education-item + .education-item {
@@ -378,7 +424,7 @@
       }
 
       .portfolio {
-        padding-top: 8mm;
+        padding-top: var(--portfolio-padding-start);
       }
 
       .portfolio__list {
@@ -392,7 +438,7 @@
 
       .portfolio__item {
         padding-top: 5px;
-        border-top: 1px solid var(--line);
+        border-top: var(--border-width) solid var(--line);
         break-inside: avoid;
       }
 
@@ -403,7 +449,7 @@
 
       .portfolio__description {
         color: var(--muted);
-        line-height: 1.3;
+        line-height: var(--line-height-compact);
       }
 
       .portfolio__details {
@@ -422,8 +468,8 @@
       }
 
       .portfolio__links a {
-        border-bottom: 1px solid var(--line);
-        font-weight: 500;
+        border-bottom: var(--border-width) solid var(--line);
+        font-weight: var(--font-weight-medium);
         text-decoration: none;
       }
 
@@ -434,90 +480,51 @@
       .portfolio__meta {
         margin: 0;
         color: var(--muted);
-        line-height: 1.35;
+        line-height: var(--line-height-heading);
       }
 
       @media screen and (max-width: 860px) {
-        body {
-          padding: 0;
-          font-size: 13px;
+        :root {
+          --font-size-body: 13px;
+          --font-size-title: clamp(34px, 10vw, 48px);
+          --font-size-section-title: 18px;
+          --font-size-heading: 13px;
+          --font-size-summary: 13px;
+          --body-padding: 0;
+          --page-width: 100%;
+          --page-min-height: 100vh;
+          --page-padding: 0;
+          --page-shadow: none;
+          --sidebar-min-height: auto;
+          --sidebar-inline-spacing: 0;
+          --sidebar-section-padding: 38px clamp(24px, 8vw, 54px);
+          --identity-min-height: auto;
+          --identity-padding: 52px clamp(24px, 8vw, 54px) 44px;
+          --main-content-padding: 48px clamp(24px, 8vw, 54px);
+          --main-section-spacing: 38px;
+          --experience-padding-end: 38px;
+          --education-padding-start: 38px;
+          --education-padding-end: 38px;
+          --portfolio-padding-start: 38px;
+          --work-list-gap: 42px;
+          --contact-icon-size: 26px;
+          --contact-row-height: 30px;
         }
 
         .resume {
           display: block;
-          width: 100%;
-          min-height: 100vh;
-          padding: 0;
-          box-shadow: none;
-        }
-
-        .sidebar {
-          min-height: auto;
-        }
-
-        .sidebar__identity {
-          min-height: auto;
-          padding: 52px clamp(24px, 8vw, 54px) 44px;
-        }
-
-        h1 {
-          font-size: clamp(34px, 10vw, 48px);
-        }
-
-        h2 {
-          font-size: 18px;
-        }
-
-        h3 {
-          font-size: 13px;
-        }
-
-        .sidebar__section {
-          margin: 0;
-          padding: 38px clamp(24px, 8vw, 54px);
         }
 
         .profile dl {
           grid-template-columns: 120px 1fr;
         }
 
-        .contact-list a,
-        .contact-list p {
-          grid-template-columns: 26px minmax(0, 1fr);
-          min-height: 30px;
-        }
-
-        .contact-list__icon {
-          width: 26px;
-          height: 26px;
-        }
-
         .contact-list__text {
           white-space: normal;
         }
 
-        .main-content {
-          padding: 48px clamp(24px, 8vw, 54px);
-        }
-
-        .main-section,
-        .main-section + .main-section,
-        .education,
-        .portfolio {
-          padding-top: 38px;
-          padding-bottom: 38px;
-        }
-
         .main-section:first-child {
           padding-top: 0;
-        }
-
-        .about p {
-          font-size: 13px;
-        }
-
-        .work-list {
-          gap: 42px;
         }
 
         .job__heading,
@@ -533,7 +540,7 @@
         .education-item + .education-item {
           padding-top: 12px;
           padding-left: 0;
-          border-top: 1px solid var(--line);
+          border-top: var(--border-width) solid var(--line);
           border-left: 0;
         }
       }
@@ -544,25 +551,22 @@
       }
 
       @media print {
-        html,
-        body {
-          background: #fff;
+        :root {
+          --body-padding: 0;
+          --page-width: 210mm;
+          --page-min-height: 0;
+          --page-shadow: none;
+          --sidebar-min-height: 270mm;
         }
 
+        html,
         body {
-          padding: 0;
+          background: var(--paper);
         }
 
         .resume {
-          width: 210mm;
           height: 297mm;
-          min-height: 0;
           margin: 0;
-          box-shadow: none;
-        }
-
-        .sidebar {
-          min-height: 270mm;
         }
       }
     </style>
