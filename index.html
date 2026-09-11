@@ -210,7 +210,8 @@
 
       .profile dl {
         display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: max-content minmax(0, 1fr);
+        column-gap: 4px;
         row-gap: 5px;
         margin-bottom: 0;
       }
@@ -439,8 +440,8 @@
 
       .portfolio__list {
         display: grid;
-        grid-template-columns: 1fr;
-        gap: 7px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 7px 12px;
         margin: 0;
         padding: 0;
         list-style: none;
@@ -475,6 +476,8 @@
         display: flex;
         flex-wrap: wrap;
         gap: 2px 8px;
+        font-size: var(--font-size-small);
+        line-height: var(--line-height-compact);
       }
 
       .portfolio__links a {
@@ -667,6 +670,7 @@
               <h3>Frontend &amp; Quality</h3>
               <ul>
                 <li>HTML5 / SCSS</li>
+                <li>Capacitor / Android / iOS</li>
                 <li>Accessibility / Web Vitals</li>
                 <li>Jest / Vitest / Playwright</li>
                 <li>Docker / GitHub Actions</li>
@@ -807,14 +811,13 @@
           class="main-section portfolio"
           aria-labelledby="portfolio-title"
         >
-          <h2 id="portfolio-title">Selected work</h2>
+          <h2 id="portfolio-title">Projects</h2>
           <ul class="portfolio__list">
             <li class="portfolio__item">
               <h3>Donation storefronts &amp; payment journeys</h3>
               <p class="portfolio__description">
-                Implemented customer-facing donation catalogs and payment flows,
-                connecting headless WordPress and external services through REST
-                APIs.
+                Built donation catalogs and payment flows with headless
+                WordPress and REST APIs.
               </p>
               <div class="portfolio__details">
                 <p class="portfolio__meta">
@@ -836,20 +839,32 @@
                   <a href="https://unwomen.de/" target="_blank" rel="noreferrer"
                     >UN Women</a
                   >
+                  <a
+                    href="https://www.menschenfuermenschen.de/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >MFM</a
+                  >
+                  <a
+                    href="https://fundraisingbox.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >FundraisingBox</a
+                  >
                 </div>
               </div>
             </li>
             <li class="portfolio__item">
               <h3>Authenticated product applications</h3>
               <p class="portfolio__description">
-                Implemented authenticated React and Vue user journeys with
-                product APIs and third-party service integrations.
+                Built authenticated React and Vue journeys with product APIs and
+                third-party services.
               </p>
               <div class="portfolio__details">
                 <p class="portfolio__meta">React · Vue · Nuxt · REST APIs</p>
                 <div class="portfolio__links" aria-label="Product projects">
                   <a
-                    href="https://app.freii.de/"
+                    href="https://play.google.com/store/apps/details?id=de.freii.app&amp;hl=en"
                     target="_blank"
                     rel="noreferrer"
                     >Freii</a
@@ -872,9 +887,8 @@
             <li class="portfolio__item">
               <h3>Editorial &amp; content platforms</h3>
               <p class="portfolio__description">
-                Built reusable CMS components and responsive templates for
-                editor-managed publishing, with emphasis on usability,
-                performance, and accessibility.
+                Built reusable, accessible CMS components and responsive
+                templates for editor-managed publishing.
               </p>
               <div class="portfolio__details">
                 <p class="portfolio__meta">Vue · Headless WordPress · SCSS</p>
@@ -896,6 +910,69 @@
                     target="_blank"
                     rel="noreferrer"
                     >Meersburg</a
+                  >
+                  <a
+                    href="https://www.progenium.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Progenium</a
+                  >
+                  <a
+                    href="https://www.nxt-a.de/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >NXT A</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="portfolio__item">
+              <h3>Commerce &amp; corporate platforms</h3>
+              <p class="portfolio__description">
+                Delivered responsive CMS and e-commerce experiences for retail
+                and B2B brands.
+              </p>
+              <div class="portfolio__details">
+                <p class="portfolio__meta">Vue · WordPress · REST APIs</p>
+                <div
+                  class="portfolio__links"
+                  aria-label="Commerce and corporate projects"
+                >
+                  <a
+                    href="https://www.superga.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Superga</a
+                  >
+                  <a
+                    href="https://www.sebago.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Sebago</a
+                  >
+                  <a
+                    href="https://avantgarde-acoustic.de/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Avantgarde</a
+                  >
+                  <a
+                    href="https://www.kernel.ua/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >KERNEL</a
+                  >
+                  <a
+                    href="https://eu.ergomotion.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Ergomotion</a
+                  >
+                  <a
+                    href="https://www.schindlerparent.de/"
+                    target="_blank"
+                    rel="noreferrer"
+                    >Schindler Parent</a
                   >
                 </div>
               </div>
