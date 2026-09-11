@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Full-Stack Engineer with 9+ years of experience building TypeScript applications, Node.js services, API integrations, and headless CMS platforms."
+      content="Full-Stack TypeScript Engineer with 9+ years of commercial experience delivering Vue, React, Node.js, PostgreSQL, payment, API, and headless CMS solutions."
     />
-    <title>Kostiantyn Tytarenko — Full-Stack Engineer</title>
+    <title>Kostiantyn Tytarenko — Full-Stack TypeScript Engineer</title>
     <style>
       @font-face {
         font-family: "DM Sans";
@@ -259,7 +259,7 @@
         white-space: nowrap;
       }
 
-      .skills {
+      .languages {
         border-bottom: 0;
       }
 
@@ -566,7 +566,12 @@
 
       @media print {
         :root {
+          --font-body: Arial, sans-serif;
           --body-padding: 0;
+          --letter-spacing-heading: 0;
+          --letter-spacing-label: 0;
+          --letter-spacing-section-title: 0;
+          --letter-spacing-title: 0;
           --page-width: 210mm;
           --page-min-height: 0;
           --page-shadow: none;
@@ -590,23 +595,8 @@
       <aside class="sidebar" aria-label="Profile details">
         <header class="sidebar__identity">
           <h1>Kostiantyn <strong>Tytarenko</strong></h1>
-          <p>Full-Stack Engineer</p>
+          <p>Full-Stack TypeScript Engineer</p>
         </header>
-
-        <section
-          class="sidebar__section profile"
-          aria-labelledby="languages-title"
-        >
-          <h2 id="languages-title">Languages</h2>
-          <dl>
-            <dt>Ukrainian</dt>
-            <dd>Native</dd>
-            <dt>English</dt>
-            <dd>B1</dd>
-            <dt>Russian</dt>
-            <dd>Native</dd>
-          </dl>
-        </section>
 
         <section class="sidebar__section" aria-labelledby="contact-title">
           <h2 id="contact-title">Contact</h2>
@@ -656,21 +646,21 @@
           <h2 id="skills-title">Skills</h2>
           <div class="skills__groups">
             <div class="skills__group">
-              <h3>Core Stack</h3>
+              <h3>Primary Stack</h3>
               <ul>
-                <li>Node.js / TypeScript</li>
+                <li>TypeScript / Node.js</li>
+                <li>PostgreSQL</li>
                 <li>Vue / Nuxt</li>
                 <li>React / Next.js</li>
-                <li>PostgreSQL / MongoDB</li>
               </ul>
             </div>
             <div class="skills__group">
               <h3>Backend &amp; Integrations</h3>
               <ul>
                 <li>Express / Fastify / NestJS</li>
-                <li>OAuth / JWT / Webhooks</li>
-                <li>REST APIs / GraphQL / Payments</li>
-                <li>Prisma / Drizzle</li>
+                <li>REST APIs / GraphQL / Webhooks</li>
+                <li>OAuth / JWT / Payments</li>
+                <li>MongoDB / Prisma / Drizzle</li>
               </ul>
             </div>
             <div class="skills__group">
@@ -691,29 +681,34 @@
             </div>
           </div>
         </section>
+
+        <section
+          class="sidebar__section profile languages"
+          aria-labelledby="languages-title"
+        >
+          <h2 id="languages-title">Languages</h2>
+          <dl>
+            <dt>Ukrainian</dt>
+            <dd>Native</dd>
+            <dt>English</dt>
+            <dd>Intermediate (B1)</dd>
+            <dt>Russian</dt>
+            <dd>Native</dd>
+          </dl>
+        </section>
       </aside>
 
       <div class="main-content">
         <section class="main-section about" aria-labelledby="about-title">
           <h2 id="about-title">Summary</h2>
           <p>
-            Full-stack engineer with 9+ years of commercial experience and 30+
-            production launches for international clients. Build Vue/Nuxt and
-            React/Next.js applications with Node.js/PostgreSQL services for
-            authentication, payments, webhooks, third-party APIs, and headless
-            CMS integrations.
+            Full-stack TypeScript engineer with 9+ years of commercial
+            experience delivering 30+ production launches for international
+            clients. Specialize in Vue/Nuxt and React/Next.js interfaces backed
+            by Node.js and PostgreSQL, with end-to-end experience across
+            authentication, payments, webhooks, third-party APIs, automated
+            testing, and headless CMS integrations.
           </p>
-          <div class="highlights" aria-label="Career highlights">
-            <p class="highlight">
-              <strong>9+ years</strong>
-            </p>
-            <p class="highlight">
-              <strong>30+ launches</strong>
-            </p>
-            <p class="highlight">
-              <strong>End-to-end delivery</strong>
-            </p>
-          </div>
         </section>
 
         <section
@@ -734,17 +729,19 @@
               </div>
               <ul>
                 <li>
-                  Shipped 30+ production launches across fundraising,
-                  e-commerce, editorial, and product platforms.
+                  Delivered 30+ production launches for international clients
+                  across fundraising, e-commerce, editorial, and product
+                  platforms.
                 </li>
                 <li>
-                  Build reusable Vue/Nuxt and React/Next.js interfaces,
-                  accessible customer journeys, and third-party integrations.
+                  Develop reusable Vue/Nuxt and React/Next.js interfaces,
+                  including accessible customer journeys and third-party
+                  integrations.
                 </li>
                 <li>
-                  Build and test PostgreSQL-backed Node.js services for
-                  authentication, payment flows, webhooks, and WordPress
-                  integrations; deliver with Docker and GitHub Actions.
+                  Implement and test PostgreSQL-backed Node.js services for
+                  authentication, payments, webhooks, and headless WordPress;
+                  package and deliver projects with Docker and GitHub Actions.
                 </li>
               </ul>
             </article>
@@ -759,13 +756,14 @@
               </div>
               <ul>
                 <li>
-                  Built React and Vue applications for raffle, digital wallet,
-                  e-commerce, booking, and healthcare products.
+                  Delivered customer-facing React and Vue flows for raffle,
+                  digital wallet, e-commerce, booking, and healthcare products.
                 </li>
                 <li>
                   Integrated REST APIs, authentication, and external services;
-                  stabilized legacy interfaces by normalizing inconsistent API
-                  responses and resolving cross-browser defects.
+                  improved legacy application stability by normalizing
+                  inconsistent API responses and resolving cross-browser
+                  defects.
                 </li>
               </ul>
             </article>
@@ -780,8 +778,9 @@
               </div>
               <ul>
                 <li>
-                  Delivered custom WordPress platforms with reusable PHP themes
-                  and ACF content models for non-technical editors.
+                  Built editor-friendly WordPress platforms with reusable PHP
+                  themes and structured ACF content models for non-technical
+                  teams.
                 </li>
               </ul>
             </article>
@@ -796,8 +795,8 @@
               </div>
               <ul>
                 <li>
-                  Developed responsive PHP/WordPress websites and Vue frontends
-                  connected through the WordPress REST API.
+                  Developed responsive PHP/WordPress websites and Vue
+                  interfaces connected through the WordPress REST API.
                 </li>
               </ul>
             </article>
@@ -813,8 +812,9 @@
             <li class="portfolio__item">
               <h3>Donation storefronts &amp; payment journeys</h3>
               <p class="portfolio__description">
-                Built donation storefronts and payment journeys backed by
-                headless WordPress and REST API integrations.
+                Implemented customer-facing donation catalogs and payment flows,
+                connecting headless WordPress and external services through REST
+                APIs.
               </p>
               <div class="portfolio__details">
                 <p class="portfolio__meta">
@@ -842,8 +842,8 @@
             <li class="portfolio__item">
               <h3>Authenticated product applications</h3>
               <p class="portfolio__description">
-                Built authenticated React and Vue product flows with REST APIs
-                and third-party service integrations.
+                Implemented authenticated React and Vue user journeys with
+                product APIs and third-party service integrations.
               </p>
               <div class="portfolio__details">
                 <p class="portfolio__meta">React · Vue · Nuxt · REST APIs</p>
@@ -872,8 +872,9 @@
             <li class="portfolio__item">
               <h3>Editorial &amp; content platforms</h3>
               <p class="portfolio__description">
-                Delivered editor-managed websites focused on CMS usability,
-                performance, accessibility, and responsive behavior.
+                Built reusable CMS components and responsive templates for
+                editor-managed publishing, with emphasis on usability,
+                performance, and accessibility.
               </p>
               <div class="portfolio__details">
                 <p class="portfolio__meta">Vue · Headless WordPress · SCSS</p>
