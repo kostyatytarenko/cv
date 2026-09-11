@@ -202,6 +202,30 @@
         text-transform: uppercase;
       }
 
+      .resume-download {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 13px;
+        padding: 7px 10px;
+        background: var(--accent);
+        color: var(--on-accent);
+        font-size: var(--font-size-small);
+        font-weight: var(--font-weight-medium);
+        letter-spacing: var(--letter-spacing-label);
+        text-transform: uppercase;
+      }
+
+      .resume-download:hover {
+        filter: brightness(0.94);
+      }
+
+      .resume-download svg {
+        width: 12px;
+        height: 12px;
+        fill: currentColor;
+      }
+
       .sidebar__section {
         margin: 0 var(--sidebar-inline-spacing);
         padding: var(--sidebar-section-padding);
@@ -586,6 +610,10 @@
           background: var(--paper);
         }
 
+        .resume-download {
+          display: none;
+        }
+
         .resume {
           height: 297mm;
           margin: 0;
@@ -599,6 +627,18 @@
         <header class="sidebar__identity">
           <h1>Kostiantyn <strong>Tytarenko</strong></h1>
           <p>Full-Stack TypeScript Engineer</p>
+          <a
+            class="resume-download"
+            href="Kostiantyn_Tytarenko_Full-Stack_TypeScript_Engineer_CV.pdf"
+            download
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3Zm-5 16h12v2H6v-2Z"
+              />
+            </svg>
+            <span>Download CV</span>
+          </a>
         </header>
 
         <section class="sidebar__section" aria-labelledby="contact-title">
