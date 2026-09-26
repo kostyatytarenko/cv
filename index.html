@@ -5,89 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Full-Stack Software Engineer with 9+ years of commercial experience delivering Vue, React, Node.js, PostgreSQL, payment, API, and headless CMS solutions."
+      content="Kostiantyn Tytarenko — Full-Stack Software Engineer with 9+ years of commercial experience."
     />
     <title>Kostiantyn Tytarenko — Full-Stack Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxaKYbSB4ZhRNU.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYTYAKRjdNQ.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="https://fonts.gstatic.com/s/ibmplexsans/v23/zYXxKVElMYYaJe8bpLHnCwDKhdTEG46kmUZQCX598fQbGYDYAKRjdNS7Iw.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&amp;display=block"
+      rel="stylesheet"
+    />
     <style>
-      @font-face {
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 300 500;
-        font-display: swap;
-        src: url("assets/fonts/manrope-cyrillic-normal-300-500.woff2")
-          format("woff2");
-        unicode-range: U+0301, U+0400-045f, U+0490-0491, U+04b0-04b1,
-          U+2116;
-      }
-
-      @font-face {
-        font-family: "Manrope";
-        font-style: normal;
-        font-weight: 300 500;
-        font-display: swap;
-        src: url("assets/fonts/manrope-latin-normal-300-500.woff2")
-          format("woff2");
-        unicode-range: U+0000-00ff, U+0131, U+0152-0153, U+02bb-02bc,
-          U+02c6, U+02da, U+02dc, U+0304, U+0308, U+0329, U+2000-206f,
-          U+20ac, U+2122, U+2191, U+2193, U+2212, U+2215, U+feff, U+fffd;
-      }
-
       :root {
         color-scheme: light;
-        --font-body: "Manrope", Arial, sans-serif;
-        --font-size-body: 12px;
-        --font-size-title: 25px;
-        --font-size-section-title: 15.5px;
-        --font-size-heading: 12.2px;
-        --font-size-summary: 12px;
-        --font-size-small: 10px;
-        --font-weight-light: 300;
-        --font-weight-regular: 400;
-        --font-weight-medium: 500;
-        --line-height-body: 1.35;
-        --line-height-title: 0.98;
-        --line-height-section-title: 1.1;
-        --line-height-heading: 1.35;
-        --line-height-summary: 1.4;
-        --line-height-compact: 1.3;
-        --letter-spacing-title: 0.7px;
-        --letter-spacing-section-title: 1.3px;
-        --letter-spacing-heading: 0.2px;
-        --letter-spacing-label: 0.6px;
-        --paper: #fff;
-        --canvas: #e5e5e3;
-        --ink: #242426;
-        --muted: #55555a;
-        --sidebar: #f0f0f0;
-        --line: #d1d1d1;
-        --timeline: #9b9b9b;
-        --accent: #f5ad2c;
-        --accent-soft: #ffd881;
-        --on-accent: #fff;
-        --border-width: 1px;
-        --border-width-strong: 2px;
-        --body-padding: 24px;
+        --paper: #ffffff;
+        --canvas: #eef0f2;
+        --ink: #393939;
+        --muted: #676767;
+        --accent: #233f6d;
+        --rule: #2f4e7b;
         --page-width: 210mm;
-        --page-min-height: 297mm;
-        --page-columns: 55mm minmax(0, 1fr);
-        --page-column-gap: 6.5mm;
-        --page-padding: 6mm 6.5mm;
-        --page-shadow: 0 16px 42px rgb(0 0 0 / 18%);
-        --sidebar-min-height: 272mm;
-        --sidebar-inline-spacing: 5mm;
-        --sidebar-section-padding: 8mm 0;
-        --identity-min-height: 42mm;
-        --identity-padding: 10mm 5mm 8mm;
-        --main-content-padding: 3mm 0 0;
-        --main-section-spacing: 3.75mm;
-        --experience-padding-end: 3.75mm;
-        --education-padding-start: 3.75mm;
-        --education-padding-end: 4mm;
-        --portfolio-padding-start: 3.75mm;
-        --work-list-gap: 3.5mm;
-        --contact-icon-size: 18px;
-        --contact-icon-glyph-size: 10px;
-        --contact-row-height: 22px;
+        --page-height: 297mm;
+        --page-padding-block: 13.5mm;
+        --page-padding-inline: 14.5mm;
       }
 
       *,
@@ -102,50 +69,13 @@
 
       body {
         margin: 0;
-        padding: var(--body-padding);
+        padding: 24px;
         color: var(--ink);
-        font-family: var(--font-body);
-        font-size: var(--font-size-body);
-        font-weight: var(--font-weight-regular);
-        line-height: var(--line-height-body);
+        font-family: "IBM Plex Sans", Arial, sans-serif;
+        font-size: 9.7pt;
+        font-weight: 400;
+        line-height: 1.38;
         -webkit-font-smoothing: antialiased;
-      }
-
-      h1,
-      h2,
-      h3,
-      p,
-      ul,
-      dl,
-      dd {
-        margin-top: 0;
-      }
-
-      h1,
-      h2,
-      h3 {
-        font-family: var(--font-body);
-      }
-
-      h2 {
-        margin-bottom: 10px;
-        font-size: var(--font-size-section-title);
-        font-weight: var(--font-weight-medium);
-        line-height: var(--line-height-section-title);
-        letter-spacing: var(--letter-spacing-section-title);
-        text-transform: uppercase;
-      }
-
-      h3 {
-        margin-bottom: 1px;
-        font-size: var(--font-size-heading);
-        font-weight: var(--font-weight-medium);
-        line-height: var(--line-height-heading);
-        letter-spacing: var(--letter-spacing-heading);
-      }
-
-      p {
-        margin-bottom: 0;
       }
 
       a {
@@ -153,491 +83,389 @@
         text-decoration: none;
       }
 
-      a:focus-visible {
-        outline: var(--border-width-strong) solid var(--accent);
-        outline-offset: 2px;
+      a:hover {
+        color: var(--accent);
+      }
+
+      a:focus-visible,
+      button:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+
+      p,
+      h1,
+      h2,
+      h3,
+      ul {
+        margin-top: 0;
+      }
+
+      .toolbar {
+        position: sticky;
+        z-index: 10;
+        top: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: fit-content;
+        max-width: calc(100% - 24px);
+        margin: 0 auto 18px;
+        padding: 6px;
+        border: 1px solid #d6dbe1;
+        border-radius: 10px;
+        background: rgb(255 255 255 / 94%);
+        box-shadow: 0 6px 20px rgb(20 32 48 / 10%);
+        font-family: inherit;
+      }
+
+      .toolbar button {
+        border: 0;
+        border-radius: 6px;
+        padding: 8px 11px;
+        background: transparent;
+        color: #4d5865;
+        cursor: pointer;
+        font: inherit;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .toolbar button[aria-pressed="true"],
+      .toolbar__print {
+        background: var(--accent);
+        color: #fff;
+      }
+
+      .toolbar__divider {
+        width: 1px;
+        height: 24px;
+        margin: 0 4px;
+        background: #d4dae1;
       }
 
       .resume {
         display: grid;
-        grid-template-columns: var(--page-columns);
-        gap: var(--page-column-gap);
+        gap: 24px;
+      }
+
+      .page {
         width: var(--page-width);
-        min-height: var(--page-min-height);
+        min-height: var(--page-height);
         margin: 0 auto;
-        padding: var(--page-padding);
-        overflow: hidden;
+        padding: var(--page-padding-block) var(--page-padding-inline);
         background: var(--paper);
-        box-shadow: var(--page-shadow);
+        box-shadow: 0 12px 38px rgb(37 49 63 / 14%);
       }
 
-      .sidebar {
+      .page-header {
+        margin-bottom: 7.5mm;
+        text-align: center;
+      }
+
+      .page-header h1 {
+        margin-bottom: 1mm;
+        color: var(--accent);
+        font-size: 24pt;
+        font-weight: 500;
+        letter-spacing: 1.8px;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .page-header__role {
+        margin-bottom: 1.3mm;
+        color: var(--muted);
+        font-size: 13pt;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.2;
+      }
+
+      .page-header__contact,
+      .page-header__location {
+        margin-bottom: 0;
+        color: #5d5d5d;
+        font-size: 9.2pt;
+      }
+
+      .page-header__contact {
         display: flex;
-        min-height: var(--sidebar-min-height);
-        flex-direction: column;
-        background: var(--sidebar);
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0 7px;
       }
 
-      .sidebar__identity {
-        position: relative;
-        min-height: var(--identity-min-height);
-        padding: var(--identity-padding);
+      .page-header__contact a + a::before {
+        margin-right: 7px;
+        color: #777;
+        content: "|";
       }
 
-      .sidebar__identity::after {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        height: var(--border-width-strong);
-        background: var(--accent);
-        content: "";
+      .page-header__location {
+        margin-top: 0.6mm;
+        font-style: italic;
       }
 
-      h1 {
-        margin-bottom: 4px;
-        font-size: var(--font-size-title);
-        font-weight: var(--font-weight-light);
-        line-height: var(--line-height-title);
-        letter-spacing: var(--letter-spacing-title);
-        text-transform: uppercase;
+      .section {
+        margin-top: 4.7mm;
       }
 
-      h1 strong {
-        display: block;
-        font-weight: inherit;
-      }
-
-      .sidebar__identity p {
-        font-family: var(--font-body);
-        font-size: var(--font-size-small);
-        font-weight: var(--font-weight-regular);
-        letter-spacing: var(--letter-spacing-label);
-        text-transform: uppercase;
-      }
-
-      .resume-download {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        margin-top: 13px;
-        padding: 7px 10px;
-        background: var(--accent);
-        color: var(--on-accent);
-        font-size: var(--font-size-small);
-        font-weight: var(--font-weight-medium);
-        letter-spacing: var(--letter-spacing-label);
-        text-transform: uppercase;
-      }
-
-      .identity-actions {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 8px;
-        margin-top: 13px;
-      }
-
-      .identity-actions .resume-download {
+      .section:first-child {
         margin-top: 0;
       }
 
-      .language-switcher {
-        display: inline-flex;
-        padding: 2px;
-        border: var(--border-width) solid var(--line);
-        background: var(--paper);
-      }
-
-      .language-switcher button {
-        border: 0;
-        padding: 5px 6px;
-        background: transparent;
-        color: var(--muted);
-        cursor: pointer;
-        font: inherit;
-        font-size: var(--font-size-small);
-        font-weight: var(--font-weight-medium);
-        line-height: 1;
-      }
-
-      .language-switcher button[aria-pressed="true"] {
-        background: var(--accent);
-        color: var(--on-accent);
-      }
-
-      .language-switcher button:focus-visible {
-        outline: var(--border-width-strong) solid var(--accent);
-        outline-offset: 2px;
-      }
-
-      .resume-download:hover {
-        filter: brightness(0.94);
-      }
-
-      .resume-download svg {
-        width: 12px;
-        height: 12px;
-        fill: currentColor;
-      }
-
-      .sidebar__section {
-        margin: 0 var(--sidebar-inline-spacing);
-        padding: var(--sidebar-section-padding);
-        border-bottom: var(--border-width) solid var(--line);
-      }
-
-      .profile dl {
-        display: grid;
-        grid-template-columns: max-content minmax(0, 1fr);
-        column-gap: 4px;
-        row-gap: 5px;
-        margin-bottom: 0;
-      }
-
-      .profile dt {
-        font-weight: var(--font-weight-medium);
-      }
-
-      .profile dd {
-        margin: 0;
-        color: var(--muted);
-      }
-
-      .contact-list {
-        display: grid;
-        gap: 3px;
-        font-style: normal;
-      }
-
-      .contact-list a,
-      .contact-list p {
-        display: grid;
-        grid-template-columns: var(--contact-icon-size) minmax(0, 1fr);
-        align-items: center;
-        min-height: var(--contact-row-height);
-      }
-
-      .contact-list__icon {
-        display: grid;
-        width: var(--contact-icon-size);
-        height: var(--contact-icon-size);
-        align-self: center;
-        place-items: center;
-        background: var(--accent);
-        color: var(--on-accent);
-      }
-
-      .contact-list__icon svg {
-        width: var(--contact-icon-glyph-size);
-        height: var(--contact-icon-glyph-size);
-        fill: currentColor;
-      }
-
-      .contact-list__text {
-        padding-left: 7px;
-        white-space: nowrap;
-      }
-
-      .languages {
-        border-bottom: 0;
-      }
-
-      .skills__groups {
-        display: grid;
-        gap: 14px;
-      }
-
-      .skills__group h3 {
-        margin-bottom: 5px;
-        font-size: var(--font-size-small);
-        font-weight: var(--font-weight-medium);
-        letter-spacing: var(--letter-spacing-title);
-      }
-
-      .skills ul {
-        display: grid;
-        gap: 4px;
-        margin-bottom: 0;
-        padding-left: 14px;
-        color: var(--muted);
-      }
-
-      .skills li::marker {
+      .section-title {
+        margin-bottom: 2.2mm;
+        padding-bottom: 1.05mm;
+        border-bottom: 1.2pt solid var(--rule);
         color: var(--accent);
+        font-size: 12.2pt;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        line-height: 1;
+        text-transform: uppercase;
       }
 
-      .main-content {
-        padding: var(--main-content-padding);
+      .summary {
+        margin-bottom: 0;
       }
 
-      .main-section {
-        padding-bottom: var(--main-section-spacing);
-        border-bottom: var(--border-width-strong) solid var(--line);
-      }
-
-      .main-section + .main-section {
-        padding-top: var(--main-section-spacing);
-      }
-
-      .about p,
-      .job li,
-      .education-item p {
-        color: var(--muted);
-      }
-
-      .about p {
-        font-size: var(--font-size-summary);
-        line-height: var(--line-height-summary);
-      }
-
-      .highlights {
+      .skills {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 12px;
-        margin-top: 8px;
+        gap: 0.7mm;
       }
 
-      .highlight {
-        padding-left: 8px;
-        border-left: var(--border-width-strong) solid var(--accent);
+      .skills p {
+        margin-bottom: 0;
       }
 
-      .highlight strong {
-        font-size: var(--font-size-heading);
-        font-weight: var(--font-weight-medium);
+      .skills strong {
+        font-weight: 500;
       }
 
-      .experience {
-        padding-bottom: var(--experience-padding-end);
-      }
-
-      .work-list {
-        position: relative;
-        display: grid;
-        gap: var(--work-list-gap);
-        margin-left: 4px;
-        padding-left: 19px;
-      }
-
-      .work-list::before {
-        position: absolute;
-        top: 4px;
-        bottom: 3px;
-        left: 3px;
-        width: var(--border-width-strong);
-        background: var(--timeline);
-        content: "";
-      }
-
-      .job {
-        position: relative;
-        break-inside: avoid;
-      }
-
-      .job::before {
-        position: absolute;
-        top: 1px;
-        left: -19px;
-        width: 7px;
-        height: 24px;
-        border: var(--border-width) solid var(--accent-soft);
-        background: var(--accent);
-        box-shadow: 0 0 0 4px var(--paper);
-        content: "";
+      .job + .job {
+        margin-top: 3.9mm;
       }
 
       .job__heading {
         display: grid;
         grid-template-columns: minmax(0, 1fr) auto;
-        gap: 12px;
-        align-items: start;
-        margin-bottom: 5px;
+        gap: 6mm;
+        align-items: baseline;
+      }
+
+      .job h3,
+      .education h3 {
+        margin-bottom: 0;
+        color: var(--accent);
+        font-size: 10.7pt;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      .job__date {
+        margin-bottom: 0;
+        font-size: 9.5pt;
+        font-weight: 500;
+        white-space: nowrap;
       }
 
       .job__company {
-        margin-top: 1px;
+        margin: 0.3mm 0 1.5mm;
         color: var(--muted);
         font-style: italic;
       }
 
-      .job__date {
-        padding-top: 1px;
-        color: var(--muted);
-        font-family: var(--font-body);
-        font-size: var(--font-size-small);
-        white-space: nowrap;
+      .job__company a {
+        border-bottom: 0.5pt solid #a9b2bd;
       }
 
       .job ul {
         margin-bottom: 0;
-        padding-left: 14px;
+        padding-left: 7mm;
       }
 
-      .education {
-        padding-top: var(--education-padding-start);
-        padding-bottom: var(--education-padding-end);
-        border-bottom: 0;
+      .job li {
+        padding-left: 1.5mm;
       }
 
-      .education__grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 12px;
+      .job li + li {
+        margin-top: 1.5mm;
       }
 
-      .education-item {
-        padding-top: 5px;
-        border-top: var(--border-width) solid var(--line);
+      .job li::marker {
+        color: var(--accent);
+        font-size: 0.75em;
       }
 
-      .education-item + .education-item {
-        padding-left: 10px;
-        border-left: var(--border-width) solid var(--line);
-      }
-
-      .education-item h3 {
-        margin-bottom: 1px;
-        text-transform: none;
-      }
-
-      .education-item p {
-        display: inline;
-      }
-
-      .education-item p + p::before {
-        content: " · ";
-      }
-
-      .education-item p:first-of-type {
+      .job__stack {
+        margin: 1.4mm 0 0;
+        color: var(--muted);
+        font-size: 9.2pt;
         font-style: italic;
       }
 
-      .portfolio {
-        padding-top: var(--portfolio-padding-start);
+      .job__projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1mm 3.5mm;
+        margin-top: 1.2mm;
+        font-size: 9.2pt;
       }
 
-      .portfolio__list {
+      .job__projects a {
+        border-bottom: 0.5pt solid #8997aa;
+        color: var(--accent);
+        font-weight: 500;
+      }
+
+      .job__projects a::after {
+        display: inline-block;
+        margin-left: 0.2em;
+        content: "↗";
+        font-size: 0.75em;
+        line-height: 1;
+        vertical-align: 0.18em;
+      }
+
+      .job__project-groups {
+        display: grid;
+        gap: 1.5mm;
+        margin-top: 1.2mm;
+      }
+
+      .job__project-group {
+        min-width: 0;
+      }
+
+      .job__project-label {
+        margin: 0 0 0.4mm;
+        color: var(--muted);
+        font-size: 9.2pt;
+        font-weight: 400;
+      }
+
+      .job__project-group .job__projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6mm 5mm;
+        margin-top: 0;
+      }
+
+      .job__project-group .job__projects a {
+        width: fit-content;
+      }
+
+      .page--second {
+        padding-top: 15mm;
+      }
+
+      .education-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 7px 12px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
+        gap: 9mm;
       }
 
-      .portfolio__item {
-        padding-top: 5px;
-        border-top: var(--border-width) solid var(--line);
-        break-inside: avoid;
+      .education p {
+        margin: 0.6mm 0 0;
       }
 
-      .portfolio__item h3 {
-        margin-bottom: 1px;
-        text-transform: none;
+      .education a {
+        border-bottom: 0.5pt solid #a9b2bd;
       }
 
-      .portfolio__description {
+      .education__meta {
         color: var(--muted);
-        line-height: var(--line-height-compact);
-      }
-
-      .portfolio__details {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 2px 12px;
-        margin-top: 3px;
-      }
-
-      .portfolio__links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2px 8px;
-        font-size: var(--font-size-small);
-        line-height: var(--line-height-compact);
-      }
-
-      .portfolio__links a {
-        border-bottom: var(--border-width) solid var(--line);
-        font-weight: var(--font-weight-medium);
-        text-decoration: none;
-      }
-
-      .portfolio__links a::after {
-        content: " ↗";
-      }
-
-      .portfolio__meta {
-        margin: 0;
-        color: var(--muted);
-        line-height: var(--line-height-heading);
+        font-style: italic;
       }
 
       @media screen and (max-width: 860px) {
-        :root {
-          --font-size-body: 13px;
-          --font-size-title: clamp(34px, 10vw, 48px);
-          --font-size-section-title: 18px;
-          --font-size-heading: 13px;
-          --font-size-summary: 13px;
-          --body-padding: 0;
-          --page-width: 100%;
-          --page-min-height: 100vh;
-          --page-padding: 0;
-          --page-shadow: none;
-          --sidebar-min-height: auto;
-          --sidebar-inline-spacing: 0;
-          --sidebar-section-padding: 38px clamp(24px, 8vw, 54px);
-          --identity-min-height: auto;
-          --identity-padding: 52px clamp(24px, 8vw, 54px) 44px;
-          --main-content-padding: 48px clamp(24px, 8vw, 54px);
-          --main-section-spacing: 38px;
-          --experience-padding-end: 38px;
-          --education-padding-start: 38px;
-          --education-padding-end: 38px;
-          --portfolio-padding-start: 38px;
-          --work-list-gap: 42px;
-          --contact-icon-size: 26px;
-          --contact-row-height: 30px;
+        body {
+          padding: 0;
+          font-size: 16px;
+        }
+
+        .toolbar {
+          top: 8px;
+          margin-bottom: 8px;
         }
 
         .resume {
+          gap: 0;
+        }
+
+        .page {
+          width: 100%;
+          min-height: 0;
+          padding: 38px clamp(22px, 6vw, 52px);
+          box-shadow: none;
+        }
+
+        .page-header {
+          margin-bottom: 36px;
+        }
+
+        .page-header h1 {
+          font-size: clamp(31px, 8vw, 44px);
+        }
+
+        .page-header__role {
+          font-size: 21px;
+        }
+
+        .page-header__contact,
+        .page-header__location {
+          font-size: 14px;
+        }
+
+        .section {
+          margin-top: 34px;
+        }
+
+        .section-title {
+          margin-bottom: 14px;
+          padding-bottom: 7px;
+          font-size: 19px;
+        }
+
+        .skills {
+          gap: 6px;
+        }
+
+        .job + .job {
+          margin-top: 28px;
+        }
+
+        .job__heading {
           display: block;
         }
 
-        .profile dl {
-          grid-template-columns: 120px 1fr;
-        }
-
-        .contact-list__text {
-          white-space: normal;
-        }
-
-        .main-section:first-child {
-          padding-top: 0;
-        }
-
-        .job__heading,
-        .education__grid,
-        .portfolio__list {
-          grid-template-columns: 1fr;
-        }
-
-        .highlights {
-          gap: 16px;
+        .job h3,
+        .education h3 {
+          font-size: 17px;
         }
 
         .job__date {
-          grid-row: 2;
+          margin-top: 4px;
+          font-size: 14px;
         }
 
-        .education-item + .education-item {
-          padding-top: 12px;
-          padding-left: 0;
-          border-top: var(--border-width) solid var(--line);
-          border-left: 0;
+        .job__company {
+          margin: 3px 0 9px;
+        }
+
+        .job__stack,
+        .job__projects,
+        .job__project-label {
+          font-size: 14px;
+        }
+
+        .education-grid {
+          grid-template-columns: 1fr;
+          gap: 24px;
         }
       }
 
@@ -647,608 +475,393 @@
       }
 
       @media print {
-        :root {
-          --body-padding: 0;
-          --letter-spacing-heading: 0;
-          --letter-spacing-label: 0;
-          --letter-spacing-section-title: 0;
-          --letter-spacing-title: 0;
-          --page-width: 210mm;
-          --page-min-height: 0;
-          --page-shadow: none;
-          --sidebar-min-height: 270mm;
-        }
-
         html,
         body {
-          background: var(--paper);
+          background: #fff;
         }
 
-        .identity-actions {
+        body {
+          padding: 0;
+        }
+
+        .toolbar {
           display: none;
         }
 
         .resume {
+          display: block;
+        }
+
+        .page {
+          width: 210mm;
           height: 297mm;
+          min-height: 0;
           margin: 0;
+          box-shadow: none;
+          break-after: page;
+          page-break-after: always;
+        }
+
+        .page:last-child {
+          break-after: auto;
+          page-break-after: auto;
         }
       }
     </style>
   </head>
   <body>
+    <nav class="toolbar" aria-label="Resume controls" data-i18n-aria-label="controlsLabel">
+      <button type="button" data-language="en" aria-pressed="true" lang="en">EN</button>
+      <button type="button" data-language="uk" aria-pressed="false" lang="uk">UA</button>
+      <span class="toolbar__divider" aria-hidden="true"></span>
+      <button class="toolbar__print" type="button" data-print data-i18n="savePdf">Save as PDF</button>
+    </nav>
+
     <main class="resume" aria-label="Resume of Kostiantyn Tytarenko" data-i18n-aria-label="resumeLabel">
-      <aside class="sidebar" aria-label="Profile details" data-i18n-aria-label="profileLabel">
-        <header class="sidebar__identity">
-          <h1><span data-i18n="firstName">Kostiantyn</span> <strong data-i18n="lastName">Tytarenko</strong></h1>
-          <p data-i18n="role">Full-Stack Software Engineer</p>
-          <div class="identity-actions">
-            <div class="language-switcher" role="group" aria-label="Language" data-i18n-aria-label="languageSwitcherLabel">
-              <button type="button" data-language="en" aria-pressed="true" lang="en">EN</button>
-              <button type="button" data-language="uk" aria-pressed="false" lang="uk">UA</button>
-            </div>
-            <a
-              class="resume-download"
-              href="Kostiantyn_Tytarenko_Full-Stack_Software_Engineer_CV.pdf"
-              download
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3Zm-5 16h12v2H6v-2Z"
-                />
-              </svg>
-              <span data-i18n="download">Download CV</span>
-            </a>
-          </div>
+      <article class="page">
+        <header class="page-header">
+          <h1 data-i18n="name">Kostiantyn Tytarenko</h1>
+          <p class="page-header__role" data-i18n="role">Full-Stack Software Engineer</p>
+          <p class="page-header__contact">
+            <a href="mailto:kos.tytarenko@gmail.com">kos.tytarenko@gmail.com</a>
+            <a href="https://linkedin.com/in/kostiantyn-tytarenko-747028414">LinkedIn</a>
+            <a href="https://github.com/kostyatytarenko">GitHub</a>
+          </p>
+          <p class="page-header__location" data-i18n="location">Ukraine — Open to Remote</p>
         </header>
 
-        <section class="sidebar__section" aria-labelledby="contact-title">
-          <h2 id="contact-title" data-i18n="contact">Contact</h2>
-          <address class="contact-list">
-            <a href="mailto:kos.tytarenko@gmail.com">
-              <span class="contact-list__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M3 5h18v14H3V5Zm2 2v.5l7 4.38 7-4.38V7H5Zm14 10V9.85l-7 4.37-7-4.37V17h14Z"
-                  />
-                </svg>
-              </span>
-              <span class="contact-list__text">kos.tytarenko@gmail.com</span>
-            </a>
-            <a
-              href="https://linkedin.com/in/kostiantyn-tytarenko-747028414"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="contact-list__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.92 6h-3.04a15.7 15.7 0 0 0-1.4-3.04A8.05 8.05 0 0 1 18.92 8ZM12 4c.83 1.2 1.47 2.55 1.85 4h-3.7A13.72 13.72 0 0 1 12 4ZM4.26 14a7.9 7.9 0 0 1 0-4h3.39a16.5 16.5 0 0 0 0 4H4.26Zm.82 2h3.04c.32 1.1.8 2.12 1.4 3.04A8.05 8.05 0 0 1 5.08 16ZM8.12 8H5.08a8.05 8.05 0 0 1 4.44-3.04A15.7 15.7 0 0 0 8.12 8ZM12 20a13.72 13.72 0 0 1-1.85-4h3.7A13.72 13.72 0 0 1 12 20Zm2.25-6h-4.5a14.28 14.28 0 0 1 0-4h4.5a14.28 14.28 0 0 1 0 4Zm.23 5.04c.6-.92 1.08-1.94 1.4-3.04h3.04a8.05 8.05 0 0 1-4.44 3.04ZM16.35 14a16.5 16.5 0 0 0 0-4h3.39a7.9 7.9 0 0 1 0 4h-3.39Z"
-                  />
-                </svg>
-              </span>
-              <span class="contact-list__text">LinkedIn</span>
-            </a>
-            <a
-              href="https://github.com/kostyatytarenko"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <span class="contact-list__icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24">
-                  <path
-                    d="m8 7-5 5 5 5 1.4-1.4L5.8 12l3.6-3.6L8 7Zm8 0-1.4 1.4 3.6 3.6-3.6 3.6L16 17l5-5-5-5Zm-3.1-3-3.8 16h2l3.8-16h-2Z"
-                  />
-                </svg>
-              </span>
-              <span class="contact-list__text">GitHub</span>
-            </a>
-          </address>
-        </section>
-
-        <section class="sidebar__section skills" aria-labelledby="skills-title">
-          <h2 id="skills-title" data-i18n="skills">Skills</h2>
-          <div class="skills__groups">
-            <div class="skills__group">
-              <h3 data-i18n="primaryStack">Primary Stack</h3>
-              <ul>
-                <li>JavaScript / TypeScript</li>
-                <li>Node.js</li>
-                <li>PostgreSQL</li>
-                <li>Vue / Nuxt</li>
-                <li>React / Next.js</li>
-              </ul>
-            </div>
-            <div class="skills__group">
-              <h3 data-i18n="backendIntegrations">Backend &amp; Integrations</h3>
-              <ul>
-                <li>Express / Fastify / NestJS</li>
-                <li>REST APIs / GraphQL / Webhooks</li>
-                <li>OAuth / JWT / Payments</li>
-                <li>MongoDB / Prisma / Drizzle</li>
-              </ul>
-            </div>
-            <div class="skills__group">
-              <h3 data-i18n="frontendQuality">Frontend &amp; Quality</h3>
-              <ul>
-                <li>HTML5 / SCSS</li>
-                <li>Capacitor / Android / iOS</li>
-                <li>Accessibility / Web Vitals</li>
-                <li>Jest / Vitest / Playwright</li>
-                <li>Docker / GitHub Actions</li>
-              </ul>
-            </div>
-            <div class="skills__group">
-              <h3 data-i18n="cmsPlatforms">CMS Platforms</h3>
-              <ul>
-                <li>PHP / WordPress / ACF</li>
-                <li>Headless WordPress</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section
-          class="sidebar__section profile languages"
-          aria-labelledby="languages-title"
-        >
-          <h2 id="languages-title" data-i18n="languages">Languages</h2>
-          <dl>
-            <dt data-i18n="ukrainian">Ukrainian</dt>
-            <dd data-i18n="native">Native</dd>
-            <dt data-i18n="english">English</dt>
-            <dd data-i18n="intermediate">Intermediate (B1)</dd>
-            <dt data-i18n="russian">Russian</dt>
-            <dd data-i18n="native">Native</dd>
-          </dl>
-        </section>
-      </aside>
-
-      <div class="main-content">
-        <section class="main-section about" aria-labelledby="about-title">
-          <h2 id="about-title" data-i18n="summaryTitle">Summary</h2>
-          <p data-i18n="summary">
-            Full-stack software engineer with 9+ years of commercial
-            experience delivering 30+ production launches for international
-            clients. Specialize in Vue/Nuxt and React/Next.js interfaces backed
-            by Node.js and PostgreSQL, with end-to-end experience across
-            authentication, payments, webhooks, third-party APIs, automated
-            testing, and headless CMS integrations.
+        <section class="section" aria-labelledby="summary-title">
+          <h2 class="section-title" id="summary-title" data-i18n="summaryTitle">Summary</h2>
+          <p class="summary" data-i18n="summary">
+            Full-Stack Software Engineer with 9+ years of commercial experience delivering 30+ production launches for international clients. Specializes in Vue/Nuxt interfaces, with additional experience delivering selected projects in React/Next.js, backed by Node.js and PostgreSQL. Brings end-to-end expertise across authentication, payments, webhooks, third-party APIs, automated testing, and headless CMS integrations.
           </p>
         </section>
 
-        <section
-          class="main-section experience"
-          aria-labelledby="experience-title"
-        >
-          <h2 id="experience-title" data-i18n="experience">Experience</h2>
-          <div class="work-list">
+        <section class="section" aria-labelledby="skills-title">
+          <h2 class="section-title" id="skills-title" data-i18n="skillsTitle">Core Skills</h2>
+          <div class="skills">
+            <p><strong data-i18n="frontendSkills">Frontend:</strong> JavaScript, TypeScript, Vue 3, Nuxt, React, Next.js, HTML5, SCSS, Accessibility, Web Vitals</p>
+            <p><strong data-i18n="backendSkills">Backend &amp; APIs:</strong> Node.js, PHP, Nitro, Express, Fastify, NestJS, REST APIs, GraphQL, Webhooks, OAuth 2.0/JWT, Payments</p>
+            <p><strong data-i18n="dataSkills">Data &amp; ORM:</strong> PostgreSQL, MongoDB, Supabase, Prisma, Drizzle</p>
+            <p><strong data-i18n="qualitySkills">Testing &amp; Delivery:</strong> Jest, Vitest, Playwright, Docker, GitHub Actions</p>
+            <p><strong data-i18n="aiSkills">AI-assisted Development:</strong> Codex, Claude Code</p>
+            <p><strong data-i18n="mobileSkills">Mobile &amp; Cross-platform:</strong> Capacitor (Android/iOS)</p>
+            <p><strong data-i18n="cmsSkills">CMS:</strong> WordPress, ACF, Headless WordPress</p>
+            <p><strong data-i18n="languages">Languages:</strong> <span data-i18n="languageList">Ukrainian (Native), Russian (Native), English (Intermediate, B1)</span></p>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="experience-title">
+          <h2 class="section-title" id="experience-title" data-i18n="experienceTitle">Professional Experience</h2>
+          <div>
             <article class="job">
               <div class="job__heading">
-                <div>
-                  <h3 data-i18n="fullStackEngineer">Full-Stack Engineer</h3>
-                  <p class="job__company" data-i18n="cookieLabsMeta">
-                    The Cookie Labs · Full-time · Remote
-                  </p>
-                </div>
-                <p class="job__date" data-i18n="cookieLabsDate">Jun 2021 - Present</p>
+                <h3 data-i18n="fullStackEngineer">Full-Stack Engineer</h3>
+                <p class="job__date" data-i18n="cookieDate">June 2021 — Present</p>
               </div>
+              <p class="job__company">
+                <a href="https://thecookielabs.com/" target="_blank" rel="noreferrer">The Cookie Labs</a>
+                <span data-i18n="cookieEmployment"> — Full-time, Remote</span>
+              </p>
               <ul>
-                <li data-i18n="cookieLabsBullet1">
-                  Delivered 30+ production launches for international clients,
-                  across fundraising, e-commerce, editorial, and product
-                  platforms.
-                </li>
-                <li data-i18n="cookieLabsBullet2">
-                  Develop reusable Vue/Nuxt and React/Next.js interfaces,
-                  including accessible customer journeys and third-party
-                  integrations.
-                </li>
-                <li data-i18n="cookieLabsBullet3">
-                  Implement and test PostgreSQL-backed Node.js services for
-                  authentication, payments, webhooks, and headless WordPress;
-                  package and deliver projects with Docker and GitHub Actions.
-                </li>
+                <li data-i18n="cookieBullet1">Delivered and maintained production platforms for international nonprofit, publishing, retail, and B2B organizations, primarily with Vue 3 and Nuxt.</li>
+                <li data-i18n="cookieBullet2">Built TypeScript applications spanning Nuxt frontends, Nitro/Node.js services, PostgreSQL and Supabase data layers, third-party integrations, and Docker-based delivery.</li>
+                <li data-i18n="cookieBullet3">Developed accessible donation storefronts and payment journeys for organizations including CBM, Doctors Without Borders, AGA, UN Women, Menschen für Menschen, and FundraisingBox.</li>
+                <li data-i18n="cookieBullet4">Contributed to the freii product across its web experience and iOS and Android app releases.</li>
               </ul>
+              <p class="job__stack">Vue 3 · Nuxt · Nitro · TypeScript · Node.js · PostgreSQL · Supabase · Docker · React/Next.js (selected projects)</p>
+              <div class="job__project-groups">
+                <div class="job__project-group">
+                  <p class="job__project-label" data-i18n="fundraisingLabel">Donation and fundraising platforms for international nonprofit and cultural organizations.</p>
+                  <div class="job__projects" aria-label="Fundraising platforms" data-i18n-aria-label="fundraisingProjectsLabel">
+                    <a href="https://www.cbm.de/geschenkspende/" target="_blank" rel="noreferrer">CBM</a>
+                    <a href="https://hilfsgut.aerzte-ohne-grenzen.at/" target="_blank" rel="noreferrer">Doctors Without Borders</a>
+                    <a href="https://spendenshop.aga-artenschutz.de/" target="_blank" rel="noreferrer">AGA</a>
+                    <a href="https://unwomen.de/" target="_blank" rel="noreferrer">UN Women</a>
+                    <a href="https://www.menschenfuermenschen.de/" target="_blank" rel="noreferrer">Menschen für Menschen</a>
+                    <a href="https://fundraisingbox.com/" target="_blank" rel="noreferrer">FundraisingBox</a>
+                    <a href="https://gutes-tun.frauenkirche-dresden.de/" target="_blank" rel="noreferrer">Frauenkirche Dresden</a>
+                  </div>
+                </div>
+                <div class="job__project-group">
+                  <p class="job__project-label" data-i18n="healthTechLabel">Medical technology and healthcare product platforms.</p>
+                  <div class="job__projects" aria-label="Medical technology platforms" data-i18n-aria-label="healthTechProjectsLabel">
+                    <a href="https://www.vivascope.de/" target="_blank" rel="noreferrer">VivaScope</a>
+                    <a href="https://mavig.de/" target="_blank" rel="noreferrer">MAVIG</a>
+                  </div>
+                </div>
+                <div class="job__project-group">
+                  <p class="job__project-label" data-i18n="platformsLabel">Corporate and professional-service websites.</p>
+                  <div class="job__projects" aria-label="Corporate and professional-service websites" data-i18n-aria-label="platformProjectsLabel">
+                    <a href="https://www.progenium.com/" target="_blank" rel="noreferrer">Progenium</a>
+                    <a href="https://www.schindlerparent.de/" target="_blank" rel="noreferrer">Schindler Parent</a>
+                    <a href="https://avantgarde-acoustic.de/" target="_blank" rel="noreferrer">Avantgarde Acoustic</a>
+                    <a href="https://www.nxt-a.de/" target="_blank" rel="noreferrer">NXT A</a>
+                    <a href="https://www.emp-assets.de/" target="_blank" rel="noreferrer">EMP Assets</a>
+                    <a href="https://bschmid-personalberatung.de/" target="_blank" rel="noreferrer">Barbara Schmid</a>
+                    <a href="https://engel-zimmermann.de/" target="_blank" rel="noreferrer">Engel &amp; Zimmermann</a>
+                    <a href="https://bebplus.de/" target="_blank" rel="noreferrer">BEB+</a>
+                  </div>
+                </div>
+                <div class="job__project-group">
+                  <p class="job__project-label" data-i18n="editorialLabel">Editorial, architecture, and destination platforms.</p>
+                  <div class="job__projects" aria-label="Editorial, architecture, and destination platforms" data-i18n-aria-label="editorialProjectsLabel">
+                    <a href="https://progress-magazine.strabag.com/" target="_blank" rel="noreferrer">Strabag Progress</a>
+                    <a href="https://toposmagazine.com/" target="_blank" rel="noreferrer">Topos</a>
+                    <a href="https://www.meersburg-therme.de/" target="_blank" rel="noreferrer">Meersburg Therme</a>
+                    <a href="https://nowherearchitekten.de/" target="_blank" rel="noreferrer">NO W HERE</a>
+                    <a href="https://www.lago-konstanz.de/" target="_blank" rel="noreferrer">LAGO Konstanz</a>
+                    <a href="https://mappe.de/" target="_blank" rel="noreferrer">Mappe</a>
+                  </div>
+                </div>
+                <div class="job__project-group">
+                  <p class="job__project-label" data-i18n="commerceLabel">E-commerce storefronts for international footwear brands.</p>
+                  <div class="job__projects" aria-label="Online stores" data-i18n-aria-label="commerceProjectsLabel">
+                    <a href="https://www.superga.com/" target="_blank" rel="noreferrer">Superga</a>
+                    <a href="https://www.sebago.com/" target="_blank" rel="noreferrer">Sebago</a>
+                  </div>
+                </div>
+                <div class="job__project-group">
+                  <p class="job__project-label" data-i18n="entertainmentLabel">Interactive brand, event, and cross-platform product experiences.</p>
+                  <div class="job__projects" aria-label="Interactive products and brand experiences" data-i18n-aria-label="entertainmentProjectsLabel">
+                    <a href="https://zaepfleweg.rothaus.de/" target="_blank" rel="noreferrer">ZÄPFLE Weg</a>
+                    <a href="https://www.fcbb-kids.de/" target="_blank" rel="noreferrer">FCBB Kids</a>
+                    <a href="https://thebestnightsofyourlife.de/" target="_blank" rel="noreferrer">Jägermeister Best Nights</a>
+                    <a href="https://iaa.schnizzl.io/" target="_blank" rel="noreferrer">IAA</a>
+                    <a href="https://freii.de/" target="_blank" rel="noreferrer">freii Website</a>
+                    <a href="https://apps.apple.com/us/app/freii/id6758774473" target="_blank" rel="noreferrer">freii App Store</a>
+                    <a href="https://play.google.com/store/apps/details?id=de.freii.app&amp;hl=en" target="_blank" rel="noreferrer">freii Google Play</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+      </article>
+
+      <article class="page page--second">
+        <section class="section" aria-labelledby="experience-continued-title">
+          <h2 class="section-title" id="experience-continued-title" data-i18n="experienceContinuedTitle">Professional Experience — Continued</h2>
+          <div>
+            <article class="job">
+              <div class="job__heading">
+                <h3 data-i18n="fullStackEngineer">Full-Stack Engineer</h3>
+                <p class="job__date" data-i18n="upstaffDate">December 2019 — October 2024</p>
+              </div>
+              <p class="job__company">
+                <a href="https://upstaff.com/" target="_blank" rel="noreferrer">Upstaff</a>
+                <span data-i18n="upstaffEmployment"> — Part-time</span>
+              </p>
+              <ul>
+                <li data-i18n="upstaffBullet1">Started as a Vue frontend developer on the internal manager platform, then helped deliver the public website with WordPress as the CMS.</li>
+                <li data-i18n="upstaffBullet2">Built Chrome extensions and browser tools, and contributed smaller backend features using Python and PostgreSQL.</li>
+                <li data-i18n="upstaffBullet3">Improved product performance and technical SEO while supporting Docker-based development and delivery.</li>
+              </ul>
+              <p class="job__stack">Vue · WordPress · PHP · Python · PostgreSQL · Docker</p>
+              <div class="job__projects" aria-label="Upstaff products" data-i18n-aria-label="upstaffProjectsLabel">
+                <a href="https://upstaff.com/" target="_blank" rel="noreferrer">Upstaff</a>
+                <a href="https://upstaff.com/tools" target="_blank" rel="noreferrer">Upstaff Tools</a>
+              </div>
             </article>
 
             <article class="job">
               <div class="job__heading">
-                <div>
-                  <h3 data-i18n="fullStackEngineer">Full-Stack Engineer</h3>
-                  <p class="job__company" data-i18n="upstaffMeta">Upstaff · Part-time · Remote</p>
-                </div>
-                <p class="job__date" data-i18n="upstaffDate">Nov 2019 - Oct 2023</p>
+                <h3 data-i18n="fullStackEngineer">Full-Stack Engineer</h3>
+                <p class="job__date" data-i18n="dmdDate">November 2018 — October 2019</p>
               </div>
+              <p class="job__company" data-i18n="dmdCompany">DMD Binary — Part-time</p>
               <ul>
-                <li data-i18n="upstaffBullet1">
-                  Built and maintained a manager-facing admin dashboard and the
-                  public website using Vue, WordPress, and PHP.
-                </li>
-                <li data-i18n="upstaffBullet2">
-                  Improved SEO and supported Docker-based development and
-                  delivery; initially engaged through DMD Binary and later
-                  continued directly with Upstaff.
-                </li>
+                <li data-i18n="dmdBullet1">Developed Raffall features with PHP, Yii2, and Less, and delivered SHS100 with a custom WordPress theme and ACF.</li>
+                <li data-i18n="dmdBullet2">Collaborated with partner IT companies as a Vue frontend developer on additional client projects.</li>
               </ul>
+              <p class="job__stack">Vue.js · PHP · Yii2 · WordPress · ACF · Less</p>
+              <div class="job__projects" aria-label="DMD Binary projects" data-i18n-aria-label="dmdProjectsLabel">
+                <a href="https://raffall.com/" target="_blank" rel="noreferrer">Raffall</a>
+                <a href="https://shs100.com/" target="_blank" rel="noreferrer">SHS100</a>
+              </div>
             </article>
 
             <article class="job">
               <div class="job__heading">
-                <div>
-                  <h3 data-i18n="fullStackWordPress">Full-Stack Engineer (WordPress)</h3>
-                  <p class="job__company" data-i18n="bootMeta">Boot Solutions · Full-time</p>
-                </div>
-                <p class="job__date" data-i18n="bootDate">Sep 2018 - Aug 2019</p>
+                <h3 data-i18n="fullStackWordPress">Full-Stack Engineer (WordPress)</h3>
+                <p class="job__date" data-i18n="jetDate">June 2017 — August 2019</p>
               </div>
+              <p class="job__company">
+                <a href="https://jet-brain.com/" target="_blank" rel="noreferrer">JetBrain</a>
+                <span data-i18n="jetEmployment"> — Full-time</span>
+              </p>
               <ul>
-                <li data-i18n="bootBullet">
-                  Built editor-friendly WordPress platforms with reusable PHP
-                  themes and structured ACF content models for non-technical
-                  teams.
-                </li>
+                <li data-i18n="jetBullet1">Built and optimized client websites primarily with WordPress, ACF, PHP custom themes, and JavaScript.</li>
+                <li data-i18n="jetBullet2">Delivered several Vue.js interfaces integrated with WordPress through the REST API.</li>
               </ul>
-            </article>
-
-            <article class="job">
-              <div class="job__heading">
-                <div>
-                  <h3 data-i18n="fullStackWordPress">Full-Stack Engineer (WordPress)</h3>
-                  <p class="job__company" data-i18n="jetBrainMeta">JetBrain · Full-time</p>
-                </div>
-                <p class="job__date" data-i18n="jetBrainDate">Jun 2017 - Aug 2018</p>
+              <p class="job__stack">WordPress · ACF · PHP · Custom Themes · JavaScript · Vue.js · REST API</p>
+              <div class="job__projects" aria-label="JetBrain projects" data-i18n-aria-label="jetProjectsLabel">
+                <a href="https://jet-brain.com/" target="_blank" rel="noreferrer">JetBrain</a>
+                <a href="https://it-solutions.ua/" target="_blank" rel="noreferrer">IT Solutions</a>
+                <a href="http://case-ukraine.com.ua/" target="_blank" rel="noreferrer">Case Ukraine</a>
+                <a href="https://cost.ua/calculator/" target="_blank" rel="noreferrer">Cost UA</a>
+                <a href="https://schoolbudget.cost.ua/" target="_blank" rel="noreferrer">School Budget</a>
+                <a href="https://notagroup.com.ua/" target="_blank" rel="noreferrer">Nota Group</a>
+                <a href="https://www.kernel.ua/" target="_blank" rel="noreferrer">Kernel</a>
+                <a href="https://waveofenglish.com.ua/" target="_blank" rel="noreferrer">Wave of English</a>
+                <a href="https://averecommodities.com/" target="_blank" rel="noreferrer">Avere Commodities</a>
+                <a href="https://lcf.ua/" target="_blank" rel="noreferrer">LCF</a>
               </div>
-              <ul>
-                <li data-i18n="jetBrainBullet">
-                  Developed responsive PHP/WordPress websites and Vue
-                  interfaces connected through the WordPress REST API.
-                </li>
-              </ul>
             </article>
           </div>
         </section>
 
-        <section
-          class="main-section portfolio"
-          aria-labelledby="portfolio-title"
-        >
-          <h2 id="portfolio-title" data-i18n="projects">Projects</h2>
-          <ul class="portfolio__list">
-            <li class="portfolio__item">
-              <h3 data-i18n="donationTitle">Donation storefronts &amp; payment journeys</h3>
-              <p class="portfolio__description" data-i18n="donationDescription">
-                Built donation catalogs and payment flows with headless
-                WordPress and REST APIs.
-              </p>
-              <div class="portfolio__details">
-                <p class="portfolio__meta">
-                  TypeScript · Payments · WordPress REST API
-                </p>
-                <div class="portfolio__links" aria-label="Fundraising projects" data-i18n-aria-label="fundraisingProjectsLabel">
-                  <a
-                    href="https://www.cbm.de/geschenkspende/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >CBM</a
-                  >
-                  <a
-                    href="https://spendenshop.aga-artenschutz.de/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >AGA</a
-                  >
-                  <a href="https://unwomen.de/" target="_blank" rel="noreferrer"
-                    >UN Women</a
-                  >
-                  <a
-                    href="https://www.menschenfuermenschen.de/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >MFM</a
-                  >
-                  <a
-                    href="https://fundraisingbox.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >FundraisingBox</a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="portfolio__item">
-              <h3 data-i18n="upstaffProjectTitle">Upstaff talent platform</h3>
-              <p class="portfolio__description" data-i18n="upstaffProjectDescription">
-                Spent four years developing Upstaff's manager-facing admin
-                dashboard and public website and improving SEO.
-              </p>
-              <div class="portfolio__details">
-                <p class="portfolio__meta">
-                  Vue · WordPress · PHP · Docker
-                </p>
-                <div class="portfolio__links" aria-label="Upstaff project" data-i18n-aria-label="upstaffProjectLabel">
-                  <a
-                    href="https://upstaff.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Upstaff</a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="portfolio__item">
-              <h3 data-i18n="editorialTitle">Editorial &amp; content platforms</h3>
-              <p class="portfolio__description" data-i18n="editorialDescription">
-                Built reusable, accessible CMS components and responsive
-                templates for editor-managed publishing.
-              </p>
-              <div class="portfolio__details">
-                <p class="portfolio__meta">Vue · Headless WordPress · SCSS</p>
-                <div class="portfolio__links" aria-label="Content projects" data-i18n-aria-label="contentProjectsLabel">
-                  <a
-                    href="https://progress-magazine.strabag.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Strabag</a
-                  >
-                  <a
-                    href="https://toposmagazine.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Topos</a
-                  >
-                  <a
-                    href="https://www.meersburg-therme.de/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Meersburg</a
-                  >
-                  <a
-                    href="https://www.progenium.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Progenium</a
-                  >
-                  <a
-                    href="https://www.nxt-a.de/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >NXT A</a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="portfolio__item">
-              <h3 data-i18n="commerceTitle">Interactive, commerce &amp; corporate platforms</h3>
-              <p class="portfolio__description" data-i18n="commerceDescription">
-                Developed the React-based ZÄPFLE Weg interactive brewery tour
-                and delivered responsive platforms for retail and B2B brands.
-              </p>
-              <div class="portfolio__details">
-                <p class="portfolio__meta">React · Vue · WordPress</p>
-                <div
-                  class="portfolio__links"
-                  aria-label="Interactive, commerce and corporate projects"
-                  data-i18n-aria-label="commerceProjectsLabel"
-                >
-                  <a
-                    href="https://zaepfleweg.rothaus.de/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >ZÄPFLE Weg</a
-                  >
-                  <a
-                    href="https://www.superga.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Superga</a
-                  >
-                  <a
-                    href="https://www.sebago.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Sebago</a
-                  >
-                  <a
-                    href="https://avantgarde-acoustic.de/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Avantgarde</a
-                  >
-                  <a
-                    href="https://www.kernel.ua/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >KERNEL</a
-                  >
-                  <a
-                    href="https://eu.ergomotion.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Ergomotion</a
-                  >
-                  <a
-                    href="https://www.schindlerparent.de/"
-                    target="_blank"
-                    rel="noreferrer"
-                    >Schindler Parent</a
-                  >
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <section
-          class="main-section education"
-          aria-labelledby="education-title"
-        >
-          <h2 id="education-title" data-i18n="education">Education</h2>
-          <div class="education__grid">
-            <article class="education-item">
-              <h3 data-i18n="weldingEngineering">Welding Engineering</h3>
-              <p data-i18n="academy">Donbas State Engineering Academy</p>
-              <p data-i18n="engineeringDegree">Engineering degree</p>
-              <p>2006 - 2011</p>
+        <section class="section education" aria-labelledby="education-title">
+          <h2 class="section-title" id="education-title" data-i18n="educationTitle">Education</h2>
+          <div class="education-grid">
+            <article>
+              <h3 data-i18n="engineering">Welding Engineering</h3>
+              <p><a href="http://eng.dgma.donetsk.ua/" target="_blank" rel="noreferrer" data-i18n="academy">Donbas State Engineering Academy</a></p>
+              <p class="education__meta"><span data-i18n="engineeringDegree">Engineering degree</span> · 2006–2011</p>
             </article>
-            <article class="education-item">
-              <h3 data-i18n="enterpriseEconomics">Specialist in Enterprise Economics</h3>
-              <p data-i18n="academy">Donbas State Engineering Academy</p>
-              <p data-i18n="economicsDegree">Economics degree</p>
-              <p>2008 - 2012</p>
+            <article>
+              <h3 data-i18n="economics">Specialist in Enterprise Economics</h3>
+              <p><a href="http://eng.dgma.donetsk.ua/" target="_blank" rel="noreferrer" data-i18n="academy">Donbas State Engineering Academy</a></p>
+              <p class="education__meta"><span data-i18n="economicsDegree">Economics degree</span> · 2008–2012</p>
             </article>
           </div>
         </section>
-      </div>
+      </article>
     </main>
+
     <script>
       const translations = {
         en: {
           title: "Kostiantyn Tytarenko — Full-Stack Software Engineer",
-          description:
-            "Full-Stack Software Engineer with 9+ years of commercial experience delivering Vue, React, Node.js, PostgreSQL, payment, API, and headless CMS solutions.",
+          description: "Kostiantyn Tytarenko — Full-Stack Software Engineer with 9+ years of commercial experience.",
+          controlsLabel: "Resume controls",
           resumeLabel: "Resume of Kostiantyn Tytarenko",
-          profileLabel: "Profile details",
-          languageSwitcherLabel: "Language",
-          firstName: "Kostiantyn",
-          lastName: "Tytarenko",
+          savePdf: "Save as PDF",
+          name: "Kostiantyn Tytarenko",
           role: "Full-Stack Software Engineer",
-          download: "Download CV",
-          contact: "Contact",
-          skills: "Skills",
-          primaryStack: "Primary Stack",
-          backendIntegrations: "Backend & Integrations",
-          frontendQuality: "Frontend & Quality",
-          cmsPlatforms: "CMS Platforms",
-          languages: "Languages",
-          ukrainian: "Ukrainian",
-          native: "Native",
-          english: "English",
-          intermediate: "Intermediate (B1)",
-          russian: "Russian",
+          location: "Ukraine — Open to Remote",
           summaryTitle: "Summary",
-          summary:
-            "Full-stack software engineer with 9+ years of commercial experience delivering 30+ production launches for international clients. Specialize in Vue/Nuxt and React/Next.js interfaces backed by Node.js and PostgreSQL, with end-to-end experience across authentication, payments, webhooks, third-party APIs, automated testing, and headless CMS integrations.",
-          experience: "Experience",
+          summary: "Full-Stack Software Engineer with 9+ years of commercial experience delivering 30+ production launches for international clients. Specializes in Vue/Nuxt interfaces, with additional experience delivering selected projects in React/Next.js, backed by Node.js and PostgreSQL. Brings end-to-end expertise across authentication, payments, webhooks, third-party APIs, automated testing, and headless CMS integrations.",
+          skillsTitle: "Core Skills",
+          frontendSkills: "Frontend:",
+          backendSkills: "Backend & APIs:",
+          dataSkills: "Data & ORM:",
+          qualitySkills: "Testing & Delivery:",
+          aiSkills: "AI-assisted Development:",
+          mobileSkills: "Mobile & Cross-platform:",
+          cmsSkills: "CMS:",
+          languages: "Languages:",
+          languageList: "Ukrainian (Native), Russian (Native), English (Intermediate, B1)",
+          experienceTitle: "Professional Experience",
+          experienceContinuedTitle: "Professional Experience — Continued",
           fullStackEngineer: "Full-Stack Engineer",
           fullStackWordPress: "Full-Stack Engineer (WordPress)",
-          cookieLabsMeta: "The Cookie Labs · Full-time · Remote",
-          cookieLabsDate: "Jun 2021 - Present",
-          cookieLabsBullet1:
-            "Delivered 30+ production launches for international clients, across fundraising, e-commerce, editorial, and product platforms.",
-          cookieLabsBullet2:
-            "Develop reusable Vue/Nuxt and React/Next.js interfaces, including accessible customer journeys and third-party integrations.",
-          cookieLabsBullet3:
-            "Implement and test PostgreSQL-backed Node.js services for authentication, payments, webhooks, and headless WordPress; package and deliver projects with Docker and GitHub Actions.",
-          upstaffMeta: "Upstaff · Part-time · Remote",
-          upstaffDate: "Nov 2019 - Oct 2023",
-          upstaffBullet1:
-            "Built and maintained a manager-facing admin dashboard and the public website using Vue, WordPress, and PHP.",
-          upstaffBullet2:
-            "Improved SEO and supported Docker-based development and delivery; initially engaged through DMD Binary and later continued directly with Upstaff.",
-          bootMeta: "Boot Solutions · Full-time",
-          bootDate: "Sep 2018 - Aug 2019",
-          bootBullet:
-            "Built editor-friendly WordPress platforms with reusable PHP themes and structured ACF content models for non-technical teams.",
-          jetBrainMeta: "JetBrain · Full-time",
-          jetBrainDate: "Jun 2017 - Aug 2018",
-          jetBrainBullet:
-            "Developed responsive PHP/WordPress websites and Vue interfaces connected through the WordPress REST API.",
-          projects: "Projects",
-          donationTitle: "Donation storefronts & payment journeys",
-          donationDescription:
-            "Built donation catalogs and payment flows with headless WordPress and REST APIs.",
-          fundraisingProjectsLabel: "Fundraising projects",
-          upstaffProjectTitle: "Upstaff talent platform",
-          upstaffProjectDescription:
-            "Spent four years developing Upstaff's manager-facing admin dashboard and public website and improving SEO.",
-          upstaffProjectLabel: "Upstaff project",
-          editorialTitle: "Editorial & content platforms",
-          editorialDescription:
-            "Built reusable, accessible CMS components and responsive templates for editor-managed publishing.",
-          contentProjectsLabel: "Content projects",
-          commerceTitle: "Interactive, commerce & corporate platforms",
-          commerceDescription:
-            "Developed the React-based ZÄPFLE Weg interactive brewery tour and delivered responsive platforms for retail and B2B brands.",
-          commerceProjectsLabel: "Interactive, commerce and corporate projects",
-          education: "Education",
-          weldingEngineering: "Welding Engineering",
+          cookieDate: "June 2021 — Present",
+          cookieEmployment: " — Full-time, Remote",
+          cookieBullet1: "Delivered and maintained production platforms for international nonprofit, publishing, retail, and B2B organizations, primarily with Vue 3 and Nuxt.",
+          cookieBullet2: "Built TypeScript applications spanning Nuxt frontends, Nitro/Node.js services, PostgreSQL and Supabase data layers, third-party integrations, and Docker-based delivery.",
+          cookieBullet3: "Developed accessible donation storefronts and payment journeys for organizations including CBM, Doctors Without Borders, AGA, UN Women, Menschen für Menschen, and FundraisingBox.",
+          cookieBullet4: "Contributed to the freii product across its web experience and iOS and Android app releases.",
+          fundraisingLabel: "Donation and fundraising platforms for international nonprofit and cultural organizations.",
+          fundraisingProjectsLabel: "Fundraising platforms",
+          healthTechLabel: "Medical technology and healthcare product platforms.",
+          healthTechProjectsLabel: "Medical technology platforms",
+          platformsLabel: "Corporate and professional-service websites.",
+          platformProjectsLabel: "Corporate and professional-service websites",
+          editorialLabel: "Editorial, architecture, and destination platforms.",
+          editorialProjectsLabel: "Editorial, architecture, and destination platforms",
+          commerceLabel: "E-commerce storefronts for international footwear brands.",
+          commerceProjectsLabel: "Online stores",
+          entertainmentLabel: "Interactive brand, event, and cross-platform product experiences.",
+          entertainmentProjectsLabel: "Interactive products and brand experiences",
+          upstaffDate: "December 2019 — October 2024",
+          upstaffEmployment: " — Part-time",
+          upstaffBullet1: "Started as a Vue frontend developer on the internal manager platform, then helped deliver the public website with WordPress as the CMS.",
+          upstaffBullet2: "Built Chrome extensions and browser tools, and contributed smaller backend features using Python and PostgreSQL.",
+          upstaffBullet3: "Improved product performance and technical SEO while supporting Docker-based development and delivery.",
+          upstaffProjectsLabel: "Upstaff products",
+          dmdDate: "November 2018 — October 2019",
+          dmdCompany: "DMD Binary — Part-time",
+          dmdBullet1: "Developed Raffall features with PHP, Yii2, and Less, and delivered SHS100 with a custom WordPress theme and ACF.",
+          dmdBullet2: "Collaborated with partner IT companies as a Vue frontend developer on additional client projects.",
+          dmdProjectsLabel: "DMD Binary projects",
+          jetDate: "June 2017 — August 2019",
+          jetEmployment: " — Full-time",
+          jetBullet1: "Built and optimized client websites primarily with WordPress, ACF, PHP custom themes, and JavaScript.",
+          jetBullet2: "Delivered several Vue.js interfaces integrated with WordPress through the REST API.",
+          jetProjectsLabel: "JetBrain projects",
+          educationTitle: "Education",
+          engineering: "Welding Engineering",
           academy: "Donbas State Engineering Academy",
           engineeringDegree: "Engineering degree",
-          enterpriseEconomics: "Specialist in Enterprise Economics",
+          economics: "Specialist in Enterprise Economics",
           economicsDegree: "Economics degree",
         },
         uk: {
           title: "Костянтин Титаренко — Full-Stack розробник",
-          description:
-            "Full-Stack розробник із понад 9 роками комерційного досвіду у Vue, React, Node.js, PostgreSQL, платіжних системах, API та headless CMS.",
+          description: "Костянтин Титаренко — Full-Stack розробник із понад 9 роками комерційного досвіду.",
+          controlsLabel: "Керування резюме",
           resumeLabel: "Резюме Костянтина Титаренка",
-          profileLabel: "Професійний профіль",
-          languageSwitcherLabel: "Мова",
-          firstName: "Костянтин",
-          lastName: "Титаренко",
+          savePdf: "Зберегти PDF",
+          name: "Костянтин Титаренко",
           role: "Full-Stack розробник",
-          download: "Завантажити CV",
-          contact: "Контакти",
-          skills: "Навички",
-          primaryStack: "Основний стек",
-          backendIntegrations: "Backend та інтеграції",
-          frontendQuality: "Frontend та якість",
-          cmsPlatforms: "CMS-платформи",
-          languages: "Мови",
-          ukrainian: "Українська",
-          native: "Рідна",
-          english: "Англійська",
-          intermediate: "Середній рівень (B1)",
-          russian: "Російська",
+          location: "Україна — відкритий до віддаленої роботи",
           summaryTitle: "Про мене",
-          summary:
-            "Full-stack розробник із понад 9 роками комерційного досвіду та більш ніж 30 успішними запусками для міжнародних клієнтів. Спеціалізуюся на інтерфейсах Vue/Nuxt і React/Next.js із backend на Node.js та PostgreSQL. Маю наскрізний досвід роботи з автентифікацією, платежами, вебхуками, сторонніми API, автоматизованим тестуванням та інтеграціями з headless CMS.",
-          experience: "Досвід",
+          summary: "Full-Stack розробник із понад 9 роками комерційного досвіду та більш ніж 30 успішними запусками для міжнародних клієнтів. Спеціалізуюся на інтерфейсах Vue/Nuxt, а також маю досвід реалізації окремих проєктів на React/Next.js із backend на Node.js та PostgreSQL. Маю наскрізний досвід роботи з автентифікацією, платежами, вебхуками, сторонніми API, автоматизованим тестуванням та інтеграціями з headless CMS.",
+          skillsTitle: "Ключові навички",
+          frontendSkills: "Frontend:",
+          backendSkills: "Backend та API:",
+          dataSkills: "Бази даних та ORM:",
+          qualitySkills: "Тестування та доставка:",
+          aiSkills: "Розробка з AI-асистентами:",
+          mobileSkills: "Mobile та кросплатформна розробка:",
+          cmsSkills: "CMS:",
+          languages: "Мови:",
+          languageList: "Українська (рідна), російська (рідна), англійська (середній рівень, B1)",
+          experienceTitle: "Професійний досвід",
+          experienceContinuedTitle: "Професійний досвід — продовження",
           fullStackEngineer: "Full-Stack розробник",
           fullStackWordPress: "Full-Stack розробник (WordPress)",
-          cookieLabsMeta: "The Cookie Labs · Повна зайнятість · Віддалено",
-          cookieLabsDate: "Чер 2021 — дотепер",
-          cookieLabsBullet1:
-            "Забезпечив понад 30 успішних запусків для міжнародних клієнтів у сферах фандрейзингу, електронної комерції, медіа та цифрових продуктів.",
-          cookieLabsBullet2:
-            "Розробляю багаторазові інтерфейси на Vue/Nuxt і React/Next.js, зокрема доступні користувацькі сценарії та інтеграції зі сторонніми сервісами.",
-          cookieLabsBullet3:
-            "Реалізую та тестую Node.js-сервіси на базі PostgreSQL для автентифікації, платежів, вебхуків і headless WordPress; готую та постачаю проєкти за допомогою Docker і GitHub Actions.",
-          upstaffMeta: "Upstaff · Часткова зайнятість · Віддалено",
-          upstaffDate: "Лис 2019 — Жов 2023",
-          upstaffBullet1:
-            "Розробляв і підтримував адміністративну панель для менеджерів та публічний сайт із використанням Vue, WordPress і PHP.",
-          upstaffBullet2:
-            "Покращував SEO та підтримував розробку й доставку в Docker; спочатку працював через DMD Binary, а згодом продовжив співпрацю безпосередньо з Upstaff.",
-          bootMeta: "Boot Solutions · Повна зайнятість",
-          bootDate: "Вер 2018 — Сер 2019",
-          bootBullet:
-            "Створював зручні для редакторів WordPress-платформи з багаторазовими PHP-темами та структурованими моделями контенту ACF для нетехнічних команд.",
-          jetBrainMeta: "JetBrain · Повна зайнятість",
-          jetBrainDate: "Чер 2017 — Сер 2018",
-          jetBrainBullet:
-            "Розробляв адаптивні сайти на PHP/WordPress та інтерфейси Vue, підключені через WordPress REST API.",
-          projects: "Проєкти",
-          donationTitle: "Благодійні каталоги та платіжні сценарії",
-          donationDescription:
-            "Створював каталоги пожертв і платіжні сценарії з використанням headless WordPress та REST API.",
-          fundraisingProjectsLabel: "Фандрейзингові проєкти",
-          upstaffProjectTitle: "Платформа талантів Upstaff",
-          upstaffProjectDescription:
-            "Протягом чотирьох років розробляв адміністративну панель Upstaff для менеджерів і публічний сайт, а також покращував SEO.",
-          upstaffProjectLabel: "Проєкт Upstaff",
-          editorialTitle: "Редакційні та контентні платформи",
-          editorialDescription:
-            "Створював багаторазові доступні CMS-компоненти та адаптивні шаблони для керованих редакторами публікацій.",
-          contentProjectsLabel: "Контентні проєкти",
-          commerceTitle: "Інтерактивні, комерційні та корпоративні платформи",
-          commerceDescription:
-            "Розробив інтерактивну React-екскурсію ZÄPFLE Weg пивоварнею та створював адаптивні платформи для роздрібних і B2B-брендів.",
-          commerceProjectsLabel: "Інтерактивні, комерційні та корпоративні проєкти",
-          education: "Освіта",
-          weldingEngineering: "Технологія та устаткування зварювання",
+          cookieDate: "Червень 2021 — дотепер",
+          cookieEmployment: " — повна зайнятість, віддалено",
+          cookieBullet1: "Розробляв і підтримував production-платформи для міжнародних благодійних, видавничих, роздрібних і B2B-організацій, переважно на Vue 3 та Nuxt.",
+          cookieBullet2: "Створював TypeScript-застосунки з Nuxt frontend, сервісами на Nitro/Node.js, даними в PostgreSQL і Supabase, сторонніми інтеграціями та доставкою в Docker.",
+          cookieBullet3: "Розробляв доступні благодійні каталоги й платіжні сценарії для CBM, Doctors Without Borders, AGA, UN Women, Menschen für Menschen і FundraisingBox.",
+          cookieBullet4: "Долучався до розвитку продукту freii: вебверсії та випусків застосунків для iOS і Android.",
+          fundraisingLabel: "Платформи для пожертв і фандрейзингу міжнародних благодійних та культурних організацій.",
+          fundraisingProjectsLabel: "Фандрейзингові платформи",
+          healthTechLabel: "Платформи медичних технологій та продуктів для охорони здоров’я.",
+          healthTechProjectsLabel: "Платформи медичних технологій",
+          platformsLabel: "Корпоративні сайти та платформи професійних послуг.",
+          platformProjectsLabel: "Корпоративні сайти та платформи професійних послуг",
+          editorialLabel: "Редакційні, архітектурні та туристичні платформи.",
+          editorialProjectsLabel: "Редакційні, архітектурні та туристичні платформи",
+          commerceLabel: "Онлайн-магазини міжнародних взуттєвих брендів.",
+          commerceProjectsLabel: "Онлайн-магазини",
+          entertainmentLabel: "Інтерактивні бренд-проєкти, події та кросплатформні продукти.",
+          entertainmentProjectsLabel: "Інтерактивні продукти та бренд-проєкти",
+          upstaffDate: "Грудень 2019 — жовтень 2024",
+          upstaffEmployment: " — часткова зайнятість",
+          upstaffBullet1: "Почав як Vue frontend розробник внутрішньої платформи для менеджерів, а згодом долучився до створення публічного сайту з WordPress як CMS.",
+          upstaffBullet2: "Розробляв Chrome-розширення та браузерні інструменти, а також виконував невеликі backend-завдання на Python і PostgreSQL.",
+          upstaffBullet3: "Покращував продуктивність продукту й технічне SEO та підтримував розробку й доставку в Docker.",
+          upstaffProjectsLabel: "Продукти Upstaff",
+          dmdDate: "Листопад 2018 — жовтень 2019",
+          dmdCompany: "DMD Binary — часткова зайнятість",
+          dmdBullet1: "Розробляв функціональність Raffall на PHP, Yii2 і Less та створив SHS100 з кастомною WordPress-темою й ACF.",
+          dmdBullet2: "Співпрацював із партнерськими IT-компаніями як Vue frontend розробник над додатковими клієнтськими проєктами.",
+          dmdProjectsLabel: "Проєкти DMD Binary",
+          jetDate: "Червень 2017 — серпень 2019",
+          jetEmployment: " — повна зайнятість",
+          jetBullet1: "Створював і оптимізував клієнтські сайти переважно на WordPress, ACF, кастомних PHP-темах і JavaScript.",
+          jetBullet2: "Реалізував кілька інтерфейсів на Vue.js, інтегрованих із WordPress через REST API.",
+          jetProjectsLabel: "Проєкти JetBrain",
+          educationTitle: "Освіта",
+          engineering: "Технологія та устаткування зварювання",
           academy: "Донбаська державна машинобудівна академія",
           engineeringDegree: "Диплом інженера",
-          enterpriseEconomics: "Спеціаліст з економіки підприємства",
+          economics: "Спеціаліст з економіки підприємства",
           economicsDegree: "Диплом економіста",
         },
       };
@@ -1268,20 +881,12 @@
           element.textContent = copy[element.dataset.i18n];
         });
 
-        document
-          .querySelectorAll("[data-i18n-aria-label]")
-          .forEach((element) => {
-            element.setAttribute(
-              "aria-label",
-              copy[element.dataset.i18nAriaLabel],
-            );
-          });
+        document.querySelectorAll("[data-i18n-aria-label]").forEach((element) => {
+          element.setAttribute("aria-label", copy[element.dataset.i18nAriaLabel]);
+        });
 
         languageButtons.forEach((button) => {
-          button.setAttribute(
-            "aria-pressed",
-            String(button.dataset.language === selectedLanguage),
-          );
+          button.setAttribute("aria-pressed", String(button.dataset.language === selectedLanguage));
         });
 
         localStorage.setItem("resume-language", selectedLanguage);
@@ -1298,14 +903,15 @@
       }
 
       languageButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          setLanguage(button.dataset.language);
-        });
+        button.addEventListener("click", () => setLanguage(button.dataset.language));
       });
 
-      const requestedLanguage = new URLSearchParams(window.location.search).get(
-        "lang",
-      );
+      document.querySelector("[data-print]").addEventListener("click", async () => {
+        await document.fonts.ready;
+        window.print();
+      });
+
+      const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
       const savedLanguage = localStorage.getItem("resume-language");
       setLanguage(requestedLanguage || savedLanguage || "en", false);
     </script>
