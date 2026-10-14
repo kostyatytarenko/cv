@@ -121,7 +121,9 @@
         font-family: inherit;
       }
 
-      .toolbar button {
+      .toolbar button,
+      .toolbar__print {
+        display: inline-block;
         border: 0;
         border-radius: 6px;
         padding: 8px 11px;
@@ -131,11 +133,16 @@
         font: inherit;
         font-size: 12px;
         font-weight: 500;
+        line-height: normal;
       }
 
       .toolbar button[aria-pressed="true"],
       .toolbar__print {
         background: var(--accent);
+        color: #fff;
+      }
+
+      .toolbar__print:hover {
         color: #fff;
       }
 
@@ -494,17 +501,15 @@
 
         .page {
           width: 210mm;
-          height: 297mm;
+          height: 296mm;
           min-height: 0;
           margin: 0;
           box-shadow: none;
-          break-after: page;
-          page-break-after: always;
         }
 
-        .page:last-child {
-          break-after: auto;
-          page-break-after: auto;
+        .page + .page {
+          break-before: page;
+          page-break-before: always;
         }
       }
     </style>
@@ -514,7 +519,13 @@
       <button type="button" data-language="en" aria-pressed="true" lang="en">EN</button>
       <button type="button" data-language="uk" aria-pressed="false" lang="uk">UA</button>
       <span class="toolbar__divider" aria-hidden="true"></span>
-      <button class="toolbar__print" type="button" data-print data-i18n="savePdf">Save as PDF</button>
+      <a
+        class="toolbar__print"
+        href="Kostiantyn-Tytarenko-Senior-Full-Stack-Product-Engineer-EN.pdf"
+        download
+        data-pdf-download
+        data-i18n="savePdf"
+      >Save as PDF</a>
     </nav>
 
     <main class="resume" aria-label="Resume of Kostiantyn Tytarenko" data-i18n-aria-label="resumeLabel">
@@ -911,6 +922,7 @@
 
       const languageButtons = document.querySelectorAll("[data-language]");
       const description = document.querySelector('meta[name="description"]');
+      const pdfDownload = document.querySelector("[data-pdf-download]");
 
       function setLanguage(language, updateUrl = true) {
         const selectedLanguage = translations[language] ? language : "en";
@@ -919,6 +931,8 @@
         document.documentElement.lang = selectedLanguage;
         document.title = copy.title;
         description.content = copy.description;
+        pdfDownload.href = `${copy.pdfFilename}.pdf`;
+        pdfDownload.download = `${copy.pdfFilename}.pdf`;
 
         document.querySelectorAll("[data-i18n]").forEach((element) => {
           element.textContent = copy[element.dataset.i18n];
@@ -947,26 +961,6 @@
 
       languageButtons.forEach((button) => {
         button.addEventListener("click", () => setLanguage(button.dataset.language));
-      });
-
-      document.querySelector("[data-print]").addEventListener("click", async () => {
-        await document.fonts.ready;
-        const language = translations[document.documentElement.lang] ? document.documentElement.lang : "en";
-        const pageTitle = document.title;
-        const restorePageTitle = () => {
-          document.title = pageTitle;
-        };
-
-        document.title = translations[language].pdfFilename;
-        window.addEventListener("afterprint", restorePageTitle, { once: true });
-
-        try {
-          window.print();
-        } catch (error) {
-          window.removeEventListener("afterprint", restorePageTitle);
-          restorePageTitle();
-          throw error;
-        }
       });
 
       const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
